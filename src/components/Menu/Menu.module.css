@@ -1,0 +1,27 @@
+.menu {
+  @apply z-10 fixed bottom-0 right-0 duration-200;
+}
+
+.item {
+  @apply text-white absolute overflow-hidden w-full h-full flex items-end;
+  transform-origin: 100% 100%;
+  transform: rotate(calc(30deg * var(--i))) skew(60deg);
+}
+
+.itemInner {
+  @apply absolute flex justify-center bg-green-300 p-8 cursor-pointer;
+  transform: skew(-60deg) rotate(-75deg) scale(1);
+  border-radius: 50%;
+  width: 30rem;
+  height: 30rem;
+  bottom: -15rem;
+}
+.itemInner:hover {
+  @apply bg-green-500;
+}
+.itemInner:hover .itemLabel {
+  @apply block;
+}
+.itemLabel {
+  @apply hidden absolute bg-green-500 p-2 rounded-lg bottom-full mb-4 shadow-md;
+}
