@@ -1,0 +1,22 @@
+.welcome {
+  @apply grid grid-cols-3 h-screen w-full;
+}
+
+.welcomeThumbnail {
+  @apply h-full w-full bg-cover bg-no-repeat bg-center;
+}
+
+.welcomeMain {
+  @apply h-full w-full p-16;
+  @apply col-span-2 grid grid-flow-row gap-4;
+}
+
+.myJobTitle {
+  @apply mt-4 mb-8 text-4xl text-yellow-500 font-bold pb-4;
+}
+
+.myAvatar {
+  @apply bg-cover bg-no-repeat bg-center rounded-full w-96 h-96;
+  @apply border-8 border-yellow-300 shadow-md;
+}
+

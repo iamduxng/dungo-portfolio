@@ -1,10 +1,12 @@
 import Menu from '~/components/Menu'
+import Welcome from '~/components/Welcome'
 
 function App() {
   return (
-    <div className="relative">
+    <>
       <Menu />
-    </div>
+      <Welcome />
+    </>
   )
 }
 

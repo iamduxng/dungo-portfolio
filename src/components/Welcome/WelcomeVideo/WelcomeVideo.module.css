@@ -1,0 +1,8 @@
+.welcomeVideo {
+  @apply flex items-center justify-end;
+}
+
+.playButton {
+  @apply absolute bottom-0 -left-8 bg-yellow-300 rounded-full w-32 h-32;
+  @apply flex items-center justify-center text-white duration-200 hover:scale-110;
+}
