@@ -1,0 +1,8 @@
+.overlay {
+  @apply fixed inset-0 z-50 bg-black bg-opacity-80;
+}
+
+.content {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  @apply w-full p-8 outline-none border-0;
+}

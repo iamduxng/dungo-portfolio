@@ -1,14 +1,18 @@
 import { useState } from 'react'
 import { IconVideoPlay } from '~/components/Icons'
+import MyModal from '~/components/Modal'
 import styles from './WelcomeVideo.module.css'
 
 function WelcomeVideo({ children }) {
   const [isOpened, setIsOpened] = useState(false)
 
+  const openVideo = () => setIsOpened(true)
+  const closeVideo = () => setIsOpened(false)
+
   return (
     <div className={styles.welcomeVideo}>
-      {isOpened && (
-        <div className="mr-8 flex-1">
+      <MyModal isOpen={isOpened} onRequestClose={closeVideo} size="md">
+        <div className="w-full max-w-screen-md">
           <iframe
             className="aspect-video w-full"
             src="https://www.youtube.com/embed/IR-6KE8C4VQ"
@@ -18,13 +22,11 @@ function WelcomeVideo({ children }) {
             allowFullScreen
           ></iframe>
         </div>
-      )}
+      </MyModal>
       <div className="relative">
-        {!isOpened && (
-          <div className={styles.playButton} onClick={() => setIsOpened(true)}>
-            <IconVideoPlay size="2.5rem" />
-          </div>
-        )}
+        <div className={styles.playButton} onClick={openVideo}>
+          <IconVideoPlay size="2.5rem" />
+        </div>
         {children}
       </div>
     </div>
