@@ -25,7 +25,7 @@ function WelcomeVideo({ children }) {
       </MyModal>
       <div className="relative">
         <div className={styles.playButton} onClick={openVideo}>
-          <IconVideoPlay size="2.5rem" />
+          <IconVideoPlay size="2.25rem" />
         </div>
         {children}
       </div>

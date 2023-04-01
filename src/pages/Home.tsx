@@ -1,7 +1,7 @@
 import Menu from '~/components/Menu'
 import Welcome from '~/components/Welcome'
 
-function App() {
+function Home() {
   return (
     <>
       <Menu />
@@ -10,4 +10,4 @@ function App() {
   )
 }
 
-export default App
+export default Home

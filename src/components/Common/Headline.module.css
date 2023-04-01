@@ -1,0 +1,17 @@
+.h1 {
+  @apply text-4xl mb-4;
+}
+
+.h2 {
+  @apply text-2xl mb-4;
+}
+
+@screen md {
+  .h1 {
+    @apply text-6xl mb-8;
+  }
+  
+  .h2 {
+    @apply text-4xl mb-8;
+  }
+}

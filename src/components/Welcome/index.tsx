@@ -1,3 +1,4 @@
+import Headline from '~/components/Common/Headline'
 import WelcomeVideo from '~/components/Welcome/WelcomeVideo'
 import styles from './Welcome.module.css'
 
@@ -22,12 +23,14 @@ function Welcome() {
       ></div>
       <div className={styles.welcomeMain}>
         <div>
-          <div className="text-6xl font-bold">
+          <Headline>
             <div>{myData.fullname}</div>
             <div>({myData.othername})</div>
-          </div>
-          <div className={styles.myJobTitle}>{myData.title}</div>
-          <div className="max-w-md text-xl">{myData.description}</div>
+          </Headline>
+          <Headline tag="h2" classes={styles.myJobTitle}>
+            {myData.title}
+          </Headline>
+          <div className="max-w-md">{myData.description}</div>
         </div>
 
         <WelcomeVideo>
