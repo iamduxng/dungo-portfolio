@@ -1,7 +1,15 @@
 import Modal from 'react-modal'
 import styles from './Modal.module.css'
 
-function MyModal({ children, size = 'md', ...props }) {
+type Props = {
+  size: string
+}
+
+function MyModal({
+  children,
+  size = 'md',
+  ...props
+}: React.PropsWithChildren<Props>) {
   const modalSize = `max-w-screen-${size}`
 
   return (

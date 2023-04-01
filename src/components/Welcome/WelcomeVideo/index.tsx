@@ -3,7 +3,11 @@ import { IconVideoPlay } from '~/components/Icons'
 import MyModal from '~/components/Modal'
 import styles from './WelcomeVideo.module.css'
 
-function WelcomeVideo({ children }) {
+type Props = {
+  children: React.ReactNode
+}
+
+function WelcomeVideo({ children }: Props) {
   const [isOpened, setIsOpened] = useState(false)
 
   const openVideo = () => setIsOpened(true)
