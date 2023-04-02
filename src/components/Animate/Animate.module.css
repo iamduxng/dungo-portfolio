@@ -1,0 +1,47 @@
+@keyframes leftSlideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate_leftSlideIn {
+  animation-name: leftSlideIn;
+  animation-duration: var(--duration, 2s);
+  animation-fill-mode: forwards;
+}
+
+.animate_rightSlideIn {
+  animation-name: rightSlideIn;
+  animation-duration: var(--duration, 2s);
+  animation-fill-mode: forwards;
+}
+
+.animate_rotate {
+  animation-name: rotate;
+  animation-duration: var(--duration, 2s);
+  animation-delay: var(--delay, 2s);
+  animation-iteration-count: var(--count, 3);
+  animation-direction: alternate;
+}
