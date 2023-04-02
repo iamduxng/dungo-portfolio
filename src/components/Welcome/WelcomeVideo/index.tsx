@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { IconVideoPlay } from '~/components/Icons'
 import MyModal from '~/components/Modal'
+import Animate, { ANIMATION_TYPE } from '~/components/Animate'
 import styles from './WelcomeVideo.module.css'
 
 type Props = {
@@ -28,9 +29,11 @@ function WelcomeVideo({ children }: Props) {
         </div>
       </MyModal>
       <div className="relative">
-        <div className={styles.playButton} onClick={openVideo}>
-          <IconVideoPlay size="2.25rem" />
-        </div>
+        <Animate type={ANIMATION_TYPE.ROTATE} classes={styles.playButton}>
+          <div className={styles.playButtonInner} onClick={openVideo}>
+            <IconVideoPlay size="2.25rem" />
+          </div>
+        </Animate>
         {children}
       </div>
     </div>

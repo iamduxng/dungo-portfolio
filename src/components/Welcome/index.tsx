@@ -1,5 +1,7 @@
 import Headline from '~/components/Common/Headline'
 import WelcomeVideo from '~/components/Welcome/WelcomeVideo'
+import Animate, { ANIMATION_TYPE } from '~/components/Animate'
+
 import styles from './Welcome.module.css'
 
 const myData = {
@@ -23,22 +25,36 @@ function Welcome() {
       ></div>
       <div className={styles.welcomeMain}>
         <div>
-          <Headline>
-            <div>{myData.fullname}</div>
-            <div>({myData.othername})</div>
-          </Headline>
-          <Headline tag="h2" classes={styles.myJobTitle}>
-            {myData.title}
-          </Headline>
-          <div className="max-w-md">{myData.description}</div>
+          <Animate type={ANIMATION_TYPE.FROM_LEFT}>
+            <Headline>
+              <div>{myData.fullname}</div>
+              <div>({myData.othername})</div>
+            </Headline>
+          </Animate>
+          <Animate
+            type={ANIMATION_TYPE.FROM_LEFT}
+            style={{ '--duration': '3s' } as React.CSSProperties}
+          >
+            <Headline tag="h2" classes={styles.myJobTitle}>
+              {myData.title}
+            </Headline>
+          </Animate>
+          <Animate
+            type={ANIMATION_TYPE.FROM_LEFT}
+            style={{ '--duration': '4s' } as React.CSSProperties}
+          >
+            <div className="max-w-md">{myData.description}</div>
+          </Animate>
         </div>
 
-        <WelcomeVideo>
-          <div
-            className={styles.myAvatar}
-            style={{ backgroundImage: `url('${myData.avatar}')` }}
-          ></div>
-        </WelcomeVideo>
+        <Animate type={ANIMATION_TYPE.FROM_RIGHT}>
+          <WelcomeVideo>
+            <div
+              className={styles.myAvatar}
+              style={{ backgroundImage: `url('${myData.avatar}')` }}
+            ></div>
+          </WelcomeVideo>
+        </Animate>
       </div>
     </div>
   )

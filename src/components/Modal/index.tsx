@@ -3,6 +3,7 @@ import styles from './Modal.module.css'
 
 type Props = {
   size: string
+  isOpen: boolean
 }
 
 function MyModal({

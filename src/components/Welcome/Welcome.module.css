@@ -7,7 +7,7 @@
 }
 
 .welcomeMain {
-  @apply w-full p-8;
+  @apply overflow-x-hidden w-full p-8;
   @apply grid grid-flow-row gap-8;
 }
 

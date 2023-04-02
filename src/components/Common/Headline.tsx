@@ -1,8 +1,8 @@
 import styles from './Headline.module.css'
 
 type Props = {
-  tag: string
-  classes: string
+  tag?: string
+  classes?: string
 }
 
 function Headline({
