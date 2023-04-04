@@ -5,7 +5,8 @@ import styles from './Animate.module.css'
 export const ANIMATION_TYPE = {
   FROM_LEFT: 'leftSlideIn',
   FROM_RIGHT: 'rightSlideIn',
-  ROTATE: 'rotate'
+  ROTATE: 'rotate',
+  POP_IN: 'popIn'
 }
 
 type Props = {

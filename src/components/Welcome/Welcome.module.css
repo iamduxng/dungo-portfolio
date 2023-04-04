@@ -1,5 +1,5 @@
 .welcome {
-  @apply w-full;
+  @apply relative w-full;
 }
 
 .welcomeThumbnail {

@@ -26,22 +26,43 @@
   }
 }
 
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .animate_leftSlideIn {
   animation-name: leftSlideIn;
-  animation-duration: var(--duration, 2s);
+  animation-duration: var(--duration, 1s);
   animation-fill-mode: forwards;
 }
 
 .animate_rightSlideIn {
   animation-name: rightSlideIn;
-  animation-duration: var(--duration, 2s);
+  animation-duration: var(--duration, 1s);
   animation-fill-mode: forwards;
 }
 
 .animate_rotate {
   animation-name: rotate;
-  animation-duration: var(--duration, 2s);
-  animation-delay: var(--delay, 2s);
+  animation-duration: var(--duration, 1s);
+  animation-delay: var(--delay, 0);
   animation-iteration-count: var(--count, 3);
   animation-direction: alternate;
+}
+
+.animate_popIn {
+  animation-name: popIn;
+  animation-duration: var(--duration, 1s);
+  animation-delay: var(--delay, 0);
+  animation-fill-mode: forwards;
 }

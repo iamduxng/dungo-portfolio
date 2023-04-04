@@ -1,0 +1,40 @@
+@keyframes showMemoji {
+  to {
+    left: -2rem;
+  }
+}
+
+.wrapper {
+  @apply fixed bottom-20 -left-52;
+  animation: showMemoji 1s 5s forwards;
+}
+
+.image {
+  @apply w-52 h-auto;
+  transform: rotate(60deg);
+}
+
+.tooltip, .close {
+  @apply bg-white border border-gray-200;
+}
+
+.tooltip {
+  @apply absolute opacity-0 p-4 rounded-2xl shadow-2xl;
+  @apply bottom-full left-1/2 w-full;
+}
+
+.close {
+  @apply absolute -top-4 -right-4 p-2 rounded-full cursor-pointer;
+}
+
+@screen md {
+  .wrapper {
+    @apply -left-64;
+  }
+  .image {
+    @apply w-64;
+  }
+  .tooltip {
+    @apply bottom-auto -top-8 left-[80%];
+  }
+}
