@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Animate, { ANIMATION_TYPE } from '~/components/Animate'
 import { IconClose } from '~/components/Icons'
+import Button from '~/components/Common/Button'
+
 import styles from './SayHi.module.css'
 
 function SayHi() {
@@ -16,8 +18,11 @@ function SayHi() {
           classes={styles.tooltip}
           style={{ '--delay': '6s' } as React.CSSProperties}
         >
-          Hello recuiters! This is for you. <button>Click here</button> if you
-          want to dig into technical stuffs under this site.
+          Hello recuiters! This is for you.{' '}
+          <Button as="a" href="/">
+            Click here
+          </Button>{' '}
+          if you want to dig into technical stuffs under this site.
           <div className={styles.close} onClick={() => setIsOpened(false)}>
             <IconClose />
           </div>
