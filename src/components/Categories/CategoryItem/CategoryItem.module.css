@@ -1,0 +1,17 @@
+.categoryItem {
+  @apply w-full h-full flex flex-col items-center justify-center cursor-pointer overflow-hidden;
+}
+
+.categoryItem:hover .categoryItemLabel {
+  @apply scale-125 duration-150;
+}
+
+.categoryItemLabel {
+  @apply uppercase;
+}
+
+@screen md {
+  .categoryItem {
+    @apply h-full;
+  }
+}

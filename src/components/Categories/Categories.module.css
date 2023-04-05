@@ -1,0 +1,9 @@
+.categories {
+  @apply h-48 grid grid-cols-1;
+}
+
+@screen md {
+  .categories {
+    @apply w-full h-screen grid-cols-3;
+  }
+}
