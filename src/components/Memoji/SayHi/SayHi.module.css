@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-  @apply fixed bottom-20 -left-52;
+  @apply fixed bottom-20 -left-52 z-50;
   animation: showMemoji 1s 5s forwards;
 }
 

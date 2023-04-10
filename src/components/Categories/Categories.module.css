@@ -1,9 +1,10 @@
-.categories {
-  @apply h-48 grid grid-cols-1;
-}
-
 @screen md {
-  .categories {
-    @apply w-full h-screen grid-cols-3;
+  .categoriesContainer {
+    @apply p-20 h-screen w-full flex items-center justify-center;
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  }
+
+  .categoriesList {
+    @apply grid grid-cols-3 gap-16 w-full h-full max-w-screen-lg;
   }
 }

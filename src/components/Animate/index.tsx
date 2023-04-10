@@ -6,7 +6,8 @@ export const ANIMATION_TYPE = {
   FROM_LEFT: 'leftSlideIn',
   FROM_RIGHT: 'rightSlideIn',
   ROTATE: 'rotate',
-  POP_IN: 'popIn'
+  POP_IN: 'popIn',
+  ENTRY: 'entry'
 }
 
 type Props = {

@@ -1,5 +1,6 @@
 import Headline from '~/components/Common/Headline'
 import styles from './CategoryItem.module.css'
+import Animate, { ANIMATION_TYPE } from '~/components/Animate'
 
 type Props = React.PropsWithChildren<{
   label: string
@@ -9,11 +10,14 @@ type Props = React.PropsWithChildren<{
 
 function CategoryItem({ label, bgColor }: Props) {
   return (
-    <div className={`${styles.categoryItem} ${bgColor}`}>
-      <Headline tag="h1" classes={styles.categoryItemLabel}>
+    <Animate
+      type={ANIMATION_TYPE.ENTRY}
+      classes={`${styles.categoryItem} ${bgColor}`}
+    >
+      <Headline tag="h2" classes={styles.categoryItemLabel}>
         {label}
       </Headline>
-    </div>
+    </Animate>
   )
 }
 

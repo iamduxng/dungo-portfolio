@@ -18,14 +18,16 @@ const CATEGORIES = [
 
 function Categories() {
   return (
-    <div className={styles.categories}>
-      {CATEGORIES.map((category, idx) => (
-        <CategoryItem
-          key={`category-item-${idx}`}
-          label={category.label}
-          bgColor={category.bgColor}
-        />
-      ))}
+    <div className={styles.categoriesContainer}>
+      <div className={styles.categoriesList}>
+        {CATEGORIES.map((category, idx) => (
+          <CategoryItem
+            key={`category-item-${idx}`}
+            label={category.label}
+            bgColor={category.bgColor}
+          />
+        ))}
+      </div>
     </div>
   )
 }
