@@ -1,3 +1,7 @@
+.categoriesList {
+  @apply opacity-0;
+}
+
 @screen md {
   .categoriesContainer {
     @apply p-20 h-screen w-full flex items-center justify-center;

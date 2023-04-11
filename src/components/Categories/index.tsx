@@ -1,4 +1,5 @@
 import styles from './Categories.module.css'
+import Animate, { ANIMATION_TYPE } from '~/components/Animate'
 import CategoryItem from '~/components/Categories/CategoryItem'
 
 const CATEGORIES = [
@@ -19,7 +20,7 @@ const CATEGORIES = [
 function Categories() {
   return (
     <div className={styles.categoriesContainer}>
-      <div className={styles.categoriesList}>
+      <Animate type={ANIMATION_TYPE.POP_IN} classes={styles.categoriesList}>
         {CATEGORIES.map((category, idx) => (
           <CategoryItem
             key={`category-item-${idx}`}
@@ -27,7 +28,7 @@ function Categories() {
             bgColor={category.bgColor}
           />
         ))}
-      </div>
+      </Animate>
     </div>
   )
 }
