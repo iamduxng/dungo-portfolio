@@ -9,6 +9,6 @@
   }
 
   .categoriesList {
-    @apply grid grid-cols-3 gap-16 w-full h-full max-w-screen-lg;
+    @apply grid grid-cols-3 gap-8 w-full h-full max-w-screen-lg;
   }
 }
