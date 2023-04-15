@@ -1,0 +1,11 @@
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide > * {
+  @apply w-full h-full;
+}
+
+.slick-slide > * {
+  @apply px-4;
+}
+ 

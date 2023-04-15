@@ -1,38 +1,17 @@
+import { useState, useTransition } from 'react'
+import { useResponsive } from 'ahooks'
+import { CATEGORIES } from '~/utils/data'
 import Animate, { ANIMATION_TYPE } from '~/components/Animate'
-import CategoryItem from '~/components/Categories/CategoryItem'
+import Carousel from '~/components/Carousel'
+import MobileCategoryItem from '~/components/Categories/MobileCategoryItem'
+import DesktopCategoryItem from '~/components/Categories/DesktopCategoryItem'
 
 import styles from './Categories.module.css'
-import { useState, useTransition } from 'react'
-
-const CATEGORIES = [
-  {
-    label: 'Skills',
-    bgColor: 'bg-rose-400',
-    link: '/skills',
-    description:
-      'If my career was a game, my technical skills would be my power, abilities and weapon.',
-    icon: '/elementals/fire.png'
-  },
-  {
-    label: 'Projects',
-    bgColor: 'bg-green-400',
-    link: '/projects',
-    description: 'Discover all the projects I have been working on.',
-    icon: '/elementals/earth.png'
-  },
-  {
-    label: 'Certificates',
-    bgColor: 'bg-teal-400',
-    link: '/certificates',
-    description:
-      'Human beings need certificates of education, but knowledge needs no certification.',
-    icon: '/elementals/air.png'
-  }
-]
 
 function Categories() {
   const [redirectedPage, setRedirectedPage] = useState('')
   const [isPending, startTransition] = useTransition()
+  const responsive = useResponsive()
 
   const toggleDetails = (categoryLink: string) => {
     startTransition(() => {
@@ -40,18 +19,44 @@ function Categories() {
     })
   }
 
+  const resetDetails = () => setRedirectedPage('')
+
+  if (responsive.md) {
+    return (
+      <div className={styles.categoriesContainer}>
+        <Animate type={ANIMATION_TYPE.POP_IN} classes={styles.categoriesList}>
+          {CATEGORIES.map((category, idx) => (
+            <DesktopCategoryItem
+              key={`category-item-${idx}`}
+              category={category}
+              isOpened={category.link === redirectedPage}
+              handleOpen={() => toggleDetails(category.link)}
+            />
+          ))}
+        </Animate>
+      </div>
+    )
+  }
+
+  const carouselSettings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrow: false,
+    centerMode: true,
+    onSwipe: () => resetDetails()
+  }
   return (
     <div className={styles.categoriesContainer}>
-      <Animate type={ANIMATION_TYPE.POP_IN} classes={styles.categoriesList}>
+      <Carousel settings={carouselSettings}>
         {CATEGORIES.map((category, idx) => (
-          <CategoryItem
+          <MobileCategoryItem
             key={`category-item-${idx}`}
             category={category}
             isOpened={category.link === redirectedPage}
             handleOpen={() => toggleDetails(category.link)}
           />
         ))}
-      </Animate>
+      </Carousel>
     </div>
   )
 }

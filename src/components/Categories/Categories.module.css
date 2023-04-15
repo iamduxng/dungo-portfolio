@@ -1,14 +1,13 @@
-.categoriesList {
-  @apply opacity-0;
+.categoriesContainer {
+  @apply py-20 px-0 w-full h-screen items-center justify-center overflow-hidden;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
 }
 
 @screen md {
   .categoriesContainer {
-    @apply p-20 h-screen w-full flex items-center justify-center;
-    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    @apply px-16 flex;
   }
-
   .categoriesList {
-    @apply grid grid-cols-3 gap-8 w-full h-full max-w-screen-lg;
+    @apply w-full h-full max-w-screen-lg opacity-0 grid grid-cols-3 gap-8;
   }
 }
