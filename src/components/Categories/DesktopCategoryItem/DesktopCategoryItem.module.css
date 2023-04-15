@@ -1,0 +1,25 @@
+.categoryItem {
+  @apply relative w-full h-full shadow-lg cursor-pointer duration-500 rounded-2xl bg-gradient-to-br;
+  transform-style: preserve-3d;
+}
+
+.categoryItem:hover {
+  scale: 1.05 !important;
+}
+
+.categoryItem:nth-child(1) {
+  transform: perspective(1500px) rotateY(-30deg);
+}
+
+.categoryItem:nth-child(2) {
+  scale: 1.05;
+}
+
+.categoryItem:nth-child(3) {
+  transform: perspective(1500px) rotateY(30deg);
+}
+
+.categoryOpened {
+  transform: rotateY(180deg) !important;
+}
+

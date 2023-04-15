@@ -1,24 +1,50 @@
+import { Link, LinkProps } from 'react-router-dom'
+
 type ButtonProps =
   | {
       as?: 'button' | 'div'
-      href?: never
+      to?: never
     }
   | {
       as?: 'a'
       href: string
     }
+  | {
+      as?: 'link'
+      to: string
+    }
 
-type Props<C extends React.ElementType> = React.PropsWithChildren<ButtonProps> &
+type Props<
+  C extends
+    | React.ElementType
+    | React.ForwardRefExoticComponent<
+        LinkProps & React.RefAttributes<HTMLAnchorElement>
+      >
+> = React.PropsWithChildren<ButtonProps> &
   Omit<React.ComponentPropsWithoutRef<C>, keyof ButtonProps>
 
-const Button = <C extends React.ElementType>({
+const Button = <
+  C extends
+    | React.ElementType
+    | React.ForwardRefExoticComponent<
+        LinkProps & React.RefAttributes<HTMLAnchorElement>
+      >
+>({
   as,
   href,
   children,
+  to,
   ...restProps
 }: Props<C>) => {
-  const Component = as || 'button'
+  if (as === 'link') {
+    return (
+      <Link to={to} {...restProps}>
+        {children}
+      </Link>
+    )
+  }
 
+  const Component = as || 'button'
   return (
     <Component href={href} {...restProps}>
       {children}

@@ -1,15 +1,13 @@
 import styles from './Headline.module.css'
 
-type Props = {
-  tag?: string
-  classes?: string
-}
+type Headline = 'h1' | 'h2' | 'h3' | 'h4'
 
-function Headline({
-  children,
-  tag = 'h1',
-  classes = ''
-}: React.PropsWithChildren<Props>) {
+type Props = React.PropsWithChildren<{
+  tag?: Headline
+  classes?: string
+}>
+
+function Headline({ children, tag = 'h1', classes = '' }: Props) {
   return <div className={`${classes} ${styles[tag]} font-bold`}>{children}</div>
 }
 

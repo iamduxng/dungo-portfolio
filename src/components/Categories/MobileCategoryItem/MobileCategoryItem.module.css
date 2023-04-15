@@ -1,0 +1,4 @@
+.categoryItem {
+  @apply relative w-full h-full shadow-lg cursor-pointer duration-500 rounded-2xl bg-gradient-to-br;
+  transform-style: preserve-3d;
+}

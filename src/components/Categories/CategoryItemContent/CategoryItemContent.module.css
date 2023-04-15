@@ -1,0 +1,58 @@
+.category {
+  @apply absolute w-full h-full flex flex-col items-center justify-center p-8;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.category.back {
+  transform: rotateY(180deg);
+}
+
+.category > * {
+  @apply duration-500;
+}
+
+.category:hover > * {
+  transform: scale(1.1);
+}
+
+.categoryLabel {
+  @apply uppercase bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
+  filter: drop-shadow(0.2rem 0.2rem rgba(0,0,0, 0.5));
+}
+
+.categoryDesc {
+  @apply text-center my-8;
+}
+
+.categoryBtn {
+  @apply rounded-lg bg-yellow-300 text-white text-sm font-medium p-3 shadow-md;
+}
+
+.categoryBtn:hover {
+  @apply bg-yellow-500;
+}
+
+.categoryIcon,
+.categoryMemoji {
+  @apply w-48;
+}
+
+.categoryIcon {
+  @apply rounded-full mb-8 shadow-lg;
+  filter: drop-shadow(0.2rem 0.2rem rgba(0, 0, 0, 0.2))
+}
+
+.categoryMemoji {
+  filter: drop-shadow(0.25rem 0.25rem rgba(0, 0, 0, 0.5));
+}
+
+.categoryMemoji.animated {
+  animation: memoji 1s alternate linear infinite;
+}
+
+@keyframes memoji {
+  to {
+    transform: rotateY(180deg) scale(1.2);
+  }
+}
