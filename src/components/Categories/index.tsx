@@ -8,7 +8,11 @@ import DesktopCategoryItem from '~/components/Categories/DesktopCategoryItem'
 
 import styles from './Categories.module.css'
 
-function Categories() {
+type Props = {
+  classes: string
+}
+
+function Categories({ classes }: Props) {
   const [redirectedPage, setRedirectedPage] = useState('')
   const [isPending, startTransition] = useTransition()
   const responsive = useResponsive()
@@ -23,7 +27,7 @@ function Categories() {
 
   if (responsive.md) {
     return (
-      <div className={styles.categoriesContainer}>
+      <div className={`${styles.categoriesContainer} ${classes}`}>
         <Animate type={ANIMATION_TYPE.POP_IN} classes={styles.categoriesList}>
           {CATEGORIES.map((category, idx) => (
             <DesktopCategoryItem

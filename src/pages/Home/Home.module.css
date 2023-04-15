@@ -1,0 +1,49 @@
+.welcome {
+  background: #ffac6f;
+  background: linear-gradient(
+    to bottom,
+    #ffac6f 0%,
+    #fdc352 33%,
+    #fee154 66%,
+    #efeebc 100%)
+  ;
+  /* 12 - 11 - 10 - 9 */
+}
+
+.categories {
+  background: #efeebc;
+  background: linear-gradient(
+    to bottom,
+    #efeebc 0%,
+    #74d4cc 33%,
+    #12a1c0 66%,
+    #07729f 100%
+  );
+  /* 8 - 7 - 6 - 5 */
+}
+
+.about {
+  @apply w-full h-screen;
+  background: #07729f;
+  background: linear-gradient(
+    to bottom,
+    #07729f 0%,
+    #004372 33%,
+    #011d34 66%,
+    #00182b 100%
+  );
+  /* 5 - 4 - 3 - 2 */
+}
+
+.contact {
+  @apply w-full h-screen;
+  background: #00182b;
+  background: linear-gradient(
+    to bottom,
+    #00182b 0%,
+    #040b3c 33%,
+    #012459 66%,
+    #233072 100%
+  );
+  /* 2 - 0 - 22 - 20 */
+}

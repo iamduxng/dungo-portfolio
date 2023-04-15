@@ -1,14 +1,6 @@
 .welcome {
-  @apply relative w-full;
-}
-
-.welcomeThumbnail {
-  @apply h-48 w-full bg-cover bg-no-repeat bg-center;
-}
-
-.welcomeMain {
-  @apply overflow-x-hidden w-full p-8;
-  @apply grid grid-flow-row gap-8;
+  @apply overflow-x-hidden relative w-full h-screen p-8;
+  @apply grid gap-8;
 }
 
 .myJobTitle {
@@ -21,18 +13,6 @@
 }
 
 @screen md {
-  .welcome {
-    @apply h-screen grid grid-cols-3;
-  }
-
-  .welcomeThumbnail {
-    @apply h-full;
-  }
-
-  .welcomeMain {
-    @apply h-full col-span-2 gap-4 p-16;
-  }
-
   .myAvatar {
     @apply w-96 h-96;
   }
