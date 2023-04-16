@@ -1,0 +1,52 @@
+/* https://codepen.io/hirokbanik/pen/pozYZgP */
+
+.moon {
+	width: 100px;
+	height: 100px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	box-shadow:
+		0 0 0 20px #FFFFFF80,
+		0 0 0 40px #FFFFFF40,
+		0 0 0 60px #FFFFFF20,
+		0 0 0 80px #FFFFFF10,
+		0 0 0 100px #FFFFFF00,
+		0 0 40px 100px #FFFFFF10;
+	animation:
+		sunrise 2s infinite linear forwards,
+		rays 2s 2s infinite linear;
+}
+
+@keyframes sunrise {
+	0% {
+		box-shadow: none;
+	}
+}
+
+@keyframes rays {
+	0% {
+		box-shadow: 
+		0 0 0 0 #FFFFFF80,
+		0 0 0 20px #FFFFFF80,
+		0 0 0 40px #FFFFFF40,
+		0 0 0 60px #FFFFFF20,
+		0 0 0 80px #FFFFFF10,
+		0 0 40px 100px #FFFFFF10;
+	}
+	100% {
+		box-shadow: 
+		0 0 0 20px #FFFFFF80,
+		0 0 0 40px #FFFFFF40,
+		0 0 0 60px #FFFFFF20,
+		0 0 0 80px #FFFFFF10,
+		0 0 0 100px #FFFFFF00,
+		0 0 40px 100px #FFFFFF10;
+	}
+}
+
+@screen md {
+	.moon {
+		width: 150px;
+		height: 150px;
+	}
+}

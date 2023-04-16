@@ -1,7 +1,7 @@
 .trigger {
-  @apply fixed z-20 bottom-0 right-0 w-24 h-24 rounded-tl-full bg-green-500 text-white;
-  @apply duration-200;
+  @apply fixed z-20 bottom-0 right-0 w-24 h-24 rounded-tl-full text-white;
+  @apply duration-200 bg-green-500;
 }
 .trigger.active {
-  @apply bg-white text-black;
+  @apply  text-black;
 }

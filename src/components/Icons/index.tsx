@@ -3,7 +3,8 @@ import { BsLayoutTextSidebar as IconRightSidebar } from 'react-icons/bs'
 import {
   FaUserAstronaut as IconUser,
   FaStarHalfAlt as IconHalfStar,
-  FaPlay as IconVideoPlay
+  FaPlay as IconVideoPlay,
+  FaPhone as IconPhone
 } from 'react-icons/fa'
 
 import { MdWorkHistory as IconWork } from 'react-icons/md'
@@ -16,5 +17,6 @@ export {
   IconWork,
   IconHalfStar,
   IconClose,
-  IconVideoPlay
+  IconVideoPlay,
+  IconPhone
 }

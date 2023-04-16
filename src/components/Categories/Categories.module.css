@@ -1,6 +1,5 @@
 .categoriesContainer {
-  @apply py-20 px-0 w-full h-screen items-center justify-center overflow-hidden;
-  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  @apply py-20 px-0 items-center justify-center overflow-hidden;
 }
 
 @screen md {
