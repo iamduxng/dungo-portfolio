@@ -1,9 +1,17 @@
 .welcomeVideo {
-  @apply flex items-center justify-end;
+  @apply flex items-center justify-end w-full h-full;
+}
+
+.welcomeVideoLeft {
+  @apply relative w-full h-full flex items-center;
+}
+
+.playButtonWrapper {
+  @apply absolute z-10 bottom-8 left-1/2 -translate-x-1/2;
 }
 
 .playButton {
-  @apply absolute bottom-0 -left-4 bg-yellow-300 w-24 h-16 cursor-pointer rounded-xl shadow-md;
+  @apply bg-orange-500 w-28 h-20 cursor-pointer rounded-xl shadow-md;
 }
 
 .playButtonInner {
@@ -11,6 +19,9 @@
 }
 
 @screen md {
+  .playButtonWrapper {
+    @apply top-1/2 -translate-y-1/2 bottom-auto -left-8 -translate-x-0;
+  }
   .playButton {
     @apply w-32 h-24;
   }

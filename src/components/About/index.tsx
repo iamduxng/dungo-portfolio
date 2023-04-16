@@ -9,7 +9,7 @@ type Props = {
 function About({ classes }: Props) {
   return (
     <div className={`${styles.about} ${classes}`}>
-      <div className="absolute top-1/2 -left-8">
+      <div className="absolute bottom-0 -left-8">
         <Moon />
       </div>
     </div>

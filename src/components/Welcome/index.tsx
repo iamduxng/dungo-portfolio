@@ -2,8 +2,10 @@ import { WELCOME } from '~/utils/data'
 import Headline from '~/components/Common/Headline'
 import WelcomeVideo from '~/components/Welcome/WelcomeVideo'
 import Sun from '~/components/Memoji/Sun'
-
 import Animate, { ANIMATION_TYPE } from '~/components/Animate'
+import HexagonItem from '~/components/Common/HexagonItem'
+import Button from '~/components/Common/Button'
+import { IconPhone } from '~/components/Icons'
 
 import styles from './Welcome.module.css'
 
@@ -19,6 +21,15 @@ function Welcome({ classes }: Props) {
       </div>
 
       <div>
+        <Animate
+          type={ANIMATION_TYPE.FROM_LEFT}
+          style={{ '--duration': '2s' } as React.CSSProperties}
+        >
+          <Headline tag="h2" classes="text-white mb-2">
+            {WELCOME.title}
+          </Headline>
+          <div className="mb-8 h-0.5 w-1/4 bg-white"></div>
+        </Animate>
         <Animate type={ANIMATION_TYPE.FROM_LEFT}>
           <Headline>
             <div>{WELCOME.fullname}</div>
@@ -27,26 +38,25 @@ function Welcome({ classes }: Props) {
         </Animate>
         <Animate
           type={ANIMATION_TYPE.FROM_LEFT}
-          style={{ '--duration': '3s' } as React.CSSProperties}
+          style={{ '--duration': '2.5s' } as React.CSSProperties}
         >
-          <Headline tag="h2" classes={styles.myJobTitle}>
-            {WELCOME.title}
-          </Headline>
-        </Animate>
-        <Animate
-          type={ANIMATION_TYPE.FROM_LEFT}
-          style={{ '--duration': '4s' } as React.CSSProperties}
-        >
-          <div className="max-w-md">{WELCOME.description}</div>
+          <div className="mb-8 max-w-md text-xl">{WELCOME.description}</div>
+          <div className={styles.contactMeButtonWrapper}>
+            <Button className={styles.contactMeButton}>
+              <span className="mr-2">Contact me</span>
+              <IconPhone />
+            </Button>
+          </div>
         </Animate>
       </div>
 
-      <Animate type={ANIMATION_TYPE.FROM_RIGHT}>
+      <Animate type={ANIMATION_TYPE.FROM_RIGHT} classes="w-full h-full">
         <WelcomeVideo>
-          <div
-            className={styles.myAvatar}
+          <HexagonItem classes={styles.myAvatarWrapper}></HexagonItem>
+          <HexagonItem
+            classes={styles.myAvatar}
             style={{ backgroundImage: `url('${WELCOME.avatar}')` }}
-          ></div>
+          />
         </WelcomeVideo>
       </Animate>
     </div>

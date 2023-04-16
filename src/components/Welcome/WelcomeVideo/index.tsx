@@ -28,16 +28,18 @@ function WelcomeVideo({ children }: Props) {
           ></iframe>
         </div>
       </MyModal>
-      <div className="relative">
-        <Animate
-          type={ANIMATION_TYPE.ROTATE}
-          classes={styles.playButton}
-          style={{ '--delay': '2s' } as React.CSSProperties}
-        >
-          <div className={styles.playButtonInner} onClick={openVideo}>
-            <IconVideoPlay size="2.25rem" />
-          </div>
-        </Animate>
+      <div className={styles.welcomeVideoLeft}>
+        <div className={styles.playButtonWrapper}>
+          <Animate
+            type={ANIMATION_TYPE.ROTATE}
+            classes={styles.playButton}
+            style={{ '--delay': '2s' } as React.CSSProperties}
+          >
+            <div className={styles.playButtonInner} onClick={openVideo}>
+              <IconVideoPlay size="2.25rem" />
+            </div>
+          </Animate>
+        </div>
         {children}
       </div>
     </div>
