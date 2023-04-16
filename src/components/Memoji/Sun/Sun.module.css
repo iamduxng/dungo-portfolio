@@ -43,3 +43,10 @@
 		0 0 40px 100px #FFDE0010;
 	}
 }
+
+@screen md {
+	.sun {
+		width: 200px;
+		height: 200px;
+	}
+}

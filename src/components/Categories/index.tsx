@@ -50,7 +50,7 @@ function Categories({ classes }: Props) {
     onSwipe: () => resetDetails()
   }
   return (
-    <div className={styles.categoriesContainer}>
+    <div className={`${styles.categoriesContainer} ${classes}`}>
       <Carousel settings={carouselSettings}>
         {CATEGORIES.map((category, idx) => (
           <MobileCategoryItem

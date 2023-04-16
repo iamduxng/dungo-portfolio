@@ -1,3 +1,10 @@
+.welcome,
+.categories,
+.about,
+.contact {
+  @apply w-full h-screen;
+}
+
 .welcome {
   background: #ffac6f;
   background: linear-gradient(
@@ -23,7 +30,6 @@
 }
 
 .about {
-  @apply w-full h-screen;
   background: #07729f;
   background: linear-gradient(
     to bottom,
@@ -36,7 +42,6 @@
 }
 
 .contact {
-  @apply w-full h-screen;
   background: #00182b;
   background: linear-gradient(
     to bottom,

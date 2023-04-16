@@ -9,7 +9,8 @@
 }
 
 .itemInner {
-  @apply absolute flex justify-center bg-green-300 p-8 cursor-pointer;
+  @apply absolute flex justify-center p-8 cursor-pointer;
+  @apply bg-gradient-to-br from-green-300 to-green-500;
   transform: skew(-60deg) rotate(-75deg) scale(1);
   border-radius: 50%;
   width: 30rem;

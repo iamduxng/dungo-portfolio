@@ -1,5 +1,5 @@
 .welcome {
-  @apply overflow-x-hidden relative w-full h-screen p-8;
+  @apply overflow-hidden relative p-16;
   @apply grid gap-8;
 }
 
