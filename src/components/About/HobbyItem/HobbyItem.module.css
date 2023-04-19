@@ -1,0 +1,7 @@
+.hobbyItem {
+  @apply w-full h-full bg-white;
+}
+
+.hobbyItemContent {
+  @apply px-16 w-full h-full flex flex-col items-center justify-center;
+}

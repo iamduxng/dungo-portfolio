@@ -12,7 +12,7 @@ export const WELCOME = {
 
 export const CATEGORIES = [
   {
-    label: 'Skills',
+    name: 'Skills',
     link: '/skills',
     description:
       'If my career was a game, my technical skills would be my power, abilities and weapon.',
@@ -21,7 +21,7 @@ export const CATEGORIES = [
     bgColor: 'from-rose-200 to-rose-500'
   },
   {
-    label: 'Projects',
+    name: 'Projects',
     link: '/projects',
     description: 'Discover all the projects I have been working on.',
     icon: '/elementals/earth.png',
@@ -29,12 +29,29 @@ export const CATEGORIES = [
     bgColor: 'from-green-200 to-green-500'
   },
   {
-    label: 'Certificates',
+    name: 'Certificates',
     link: '/certificates',
     description:
       'Human beings need certificates of education, but knowledge needs no certification.',
     icon: '/elementals/air.png',
     memoji: '/memojis/certificates.png',
     bgColor: 'from-teal-200 to-teal-500'
+  }
+]
+
+export const HOBBIES = [
+  {
+    name: 'Sports',
+    description:
+      'When I feel tired, I just think about how great I will feel once I finally reach my goal.'
+  },
+  {
+    name: 'Travel',
+    description: 'The journey of a thousand miles begins with a single step.'
+  },
+  {
+    name: 'Games',
+    description:
+      'Playing games is the best time of your life, and the more games you get, the better it is'
   }
 ]
