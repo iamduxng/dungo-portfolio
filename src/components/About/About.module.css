@@ -1,12 +1,34 @@
 .about {
-  @apply flex items-center justify-center relative p-16;
+  @apply flex items-center justify-center relative p-8;
 }
 
 .hobbiesList {
-  @apply flex justify-center w-full max-w-screen-lg;
+  @apply flex flex-col justify-center w-full max-w-screen-lg;
 }
 
 .hobbyItem {
-  width: 40%;
+  @apply w-full opacity-0;
   height: 300px;
+}
+
+.hobbyItem:nth-child(2) {
+  @apply my-8;
+}
+
+@screen md {
+  .about {
+    @apply p-16;
+  }
+
+  .hobbiesList {
+    @apply flex-row;
+  }
+
+  .hobbyItem {
+    width: 40%;
+  }
+
+  .hobbyItem:nth-child(2) {
+    @apply my-0;
+  }
 }
