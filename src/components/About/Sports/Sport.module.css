@@ -1,0 +1,27 @@
+.modalSportsRow {
+  @apply flex justify-center items-center my-4;
+}
+
+.modalSportsCol {
+  @apply flex flex-1 justify-center items-center
+}
+
+.modalSportsIcon {
+  @apply z-10 w-20 h-20 flex justify-center items-center rounded-full bg-green-300;
+}
+
+.modalSportsBackground {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-green-300;
+  width: calc(50% + 1rem);
+  height: calc(100% - 4rem);
+}
+
+@screen md {
+  .modalSportsIcon {
+    @apply w-24 h-24;
+  }
+  .modalSportsBackground {
+    width: calc(50% + 4rem);
+    height: calc(100% - 5rem);
+  }
+}

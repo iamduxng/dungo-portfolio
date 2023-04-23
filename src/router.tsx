@@ -5,6 +5,7 @@ import Details from '~/layouts/Details'
 import Skills from '~/pages/Skills'
 import Projects from '~/pages/Projects'
 import Certificates from '~/pages/Certificates'
+import Travel from '~/pages/Travel'
 
 const routes = [
   {
@@ -27,6 +28,10 @@ const routes = [
       {
         path: '/certificates',
         element: <Certificates />
+      },
+      {
+        path: '/travel',
+        element: <Travel />
       }
     ]
   }

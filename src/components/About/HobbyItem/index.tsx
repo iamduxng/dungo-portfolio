@@ -10,11 +10,12 @@ export type HOBBY = {
 type Props = React.PropsWithChildren<{
   hobby: HOBBY
   classes?: string
+  onClick?: () => void
 }>
 
-function HobbyItem({ hobby, classes }: Props) {
+function HobbyItem({ hobby, classes, onClick }: Props) {
   return (
-    <HexagonItem classes={`${styles.hobbyItem} ${classes}`}>
+    <HexagonItem classes={`${styles.hobbyItem} ${classes}`} onClick={onClick}>
       <div className={styles.hobbyItemContent}>
         <Headline classes="mb-2" tag="h2">
           {hobby.name}

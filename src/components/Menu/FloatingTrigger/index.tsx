@@ -12,7 +12,7 @@ function FloatingTrigger({ toggleMenu, isOpened }: Props) {
       <div className={`${styles.trigger} ${isOpened ? styles.active : ''}`}>
         <button className="mt-10 ml-10" onClick={toggleMenu}>
           {isOpened ? (
-            <IconClose size="2rem" />
+            <IconClose size="3rem" className="text-white" />
           ) : (
             <IconRightSidebar size="2rem" />
           )}

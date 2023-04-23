@@ -4,8 +4,8 @@ import Moon from '~/components/Memoji/Moon'
 import HobbyItem from '~/components/About/HobbyItem'
 
 import styles from './About.module.css'
-import Animate from '../Animate'
-import { ANIMATION_TYPE } from '../Animate'
+import Animate, { ANIMATION_TYPE } from '~/components/Animate'
+import Sports from './Sports'
 
 type Props = {
   classes: string
@@ -22,17 +22,7 @@ function About({ classes }: Props) {
       </div>
 
       <div className={styles.hobbiesList}>
-        <Animate
-          type={ANIMATION_TYPE.FROM_LEFT}
-          style={
-            responsive.md
-              ? ({ '--toX': '20%', '--toY': '52%' } as React.CSSProperties)
-              : {}
-          }
-          classes={styles.hobbyItem}
-        >
-          <HobbyItem hobby={sport} />
-        </Animate>
+        <Sports hobby={sport} />
         <Animate type={ANIMATION_TYPE.FROM_TOP} classes={styles.hobbyItem}>
           <HobbyItem hobby={travel} />
         </Animate>

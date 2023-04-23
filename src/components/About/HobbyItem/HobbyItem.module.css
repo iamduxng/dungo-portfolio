@@ -1,5 +1,9 @@
 .hobbyItem {
-  @apply w-full h-full bg-white;
+  @apply w-full h-full bg-white cursor-pointer;
+}
+
+.hobbyItem:hover {
+  @apply bg-gray-100;
 }
 
 .hobbyItemContent {
