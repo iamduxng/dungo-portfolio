@@ -1,0 +1,50 @@
+.album {
+  @apply relative w-full h-full;
+}
+
+.albumBg:after,
+.albumBg:before {
+  content: '';
+  @apply absolute w-full h-full top-0 left-0 opacity-50 rounded-md;
+  @apply bg-gray-500;
+}
+
+.albumBg:after {
+  transform: rotate(5deg);
+}
+
+.albumBg:before {
+  @apply bg-gray-400;
+  transform: rotate(-5deg);
+}
+
+.albumThumbnail {
+  @apply relative w-full h-full z-[1] cursor-pointer duration-500 rounded-md;
+  @apply bg-cover bg-center bg-no-repeat;
+}
+
+.albumThumbnail:hover {
+  @apply scale-105;
+}
+
+.albumName {
+  @apply text-white font-bold mt-8;
+}
+
+.modalImage {
+  @apply w-full h-auto;
+}
+
+.modalPaging {
+  @apply absolute w-full bg-black bg-opacity-20 p-4 pb-8 bottom-0 left-1/2 -translate-x-1/2 overflow-x-auto;
+  @apply !grid grid-flow-col justify-center gap-2;
+}
+
+.modalPagingImage {
+  @apply relative w-20 h-20 bg-cover bg-center bg-no-repeat;
+}
+
+.modalPagingImage:after {
+  content: '';
+  @apply absolute w-full h-full bg-black bg-opacity-60 top-0 left-0;
+}

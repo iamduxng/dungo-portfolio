@@ -43,15 +43,86 @@ export const HOBBIES = [
   {
     name: 'Sports',
     description:
-      'When I feel tired, I just think about how great I will feel once I finally reach my goal.'
+      'When I feel tired, I just think about how great I will feel once I finally reach my goal.',
+    link: ''
   },
   {
     name: 'Travel',
-    description: 'The journey of a thousand miles begins with a single step.'
+    description: 'The journey of a thousand miles begins with a single step.',
+    link: '/travel'
   },
   {
     name: 'Games',
     description:
-      'Playing games is the best time of your life, and the more games you get, the better it is'
+      'Playing games is the best time of your life, and the more games you get, the better it is',
+    link: '/games'
+  }
+]
+
+const MOCK_IMAGES = [
+  {
+    src: 'https://picsum.photos/id/19/400'
+  },
+  {
+    src: 'https://picsum.photos/id/20/400'
+  },
+  {
+    src: 'https://picsum.photos/id/21/400'
+  },
+  {
+    src: 'https://picsum.photos/id/22/400'
+  },
+  {
+    src: 'https://picsum.photos/id/23/400'
+  },
+  {
+    src: 'https://picsum.photos/id/24/400'
+  }
+]
+export const TRAVEL = [
+  {
+    thumbnail: 'https://picsum.photos/id/10/400',
+    name: 'Sydney, Australia',
+    images: [...MOCK_IMAGES]
+  },
+  {
+    thumbnail: 'https://picsum.photos/id/11/400',
+    name: 'Da Nang, Vietnam',
+    images: [...MOCK_IMAGES]
+  },
+  {
+    thumbnail: 'https://picsum.photos/id/12/400',
+    name: 'Singapore',
+    images: [...MOCK_IMAGES]
+  },
+  {
+    thumbnail: 'https://picsum.photos/id/13/400',
+    name: 'Sydney, Australia',
+    images: [...MOCK_IMAGES]
+  },
+  {
+    thumbnail: 'https://picsum.photos/id/14/400',
+    name: 'Da Nang, Vietnam',
+    images: [...MOCK_IMAGES]
+  },
+  {
+    thumbnail: 'https://picsum.photos/id/15/400',
+    name: 'Singapore',
+    images: [...MOCK_IMAGES]
+  },
+  {
+    thumbnail: 'https://picsum.photos/id/16/400',
+    name: 'Sydney, Australia',
+    images: [...MOCK_IMAGES]
+  },
+  {
+    thumbnail: 'https://picsum.photos/id/17/400',
+    name: 'Da Nang, Vietnam',
+    images: [...MOCK_IMAGES]
+  },
+  {
+    thumbnail: 'https://picsum.photos/id/18/400',
+    name: 'Singapore',
+    images: [...MOCK_IMAGES]
   }
 ]

@@ -8,15 +8,9 @@
 }
 
 .close {
-  @apply absolute -bottom-4 right-1/2 translate-x-1/2 bg-white rounded-full p-1 cursor-pointer;
+  @apply absolute top-4 right-4 bg-white rounded-full p-1 cursor-pointer;
 }
 
 .headline {
-  @apply text-white text-center mb-4;
-}
-
-@screen md {
-  .close {
-    @apply bottom-0 right-8 translate-x-0;
-  }
+  @apply text-white text-center mb-4 capitalize;
 }

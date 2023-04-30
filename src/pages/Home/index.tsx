@@ -12,10 +12,10 @@ function Home() {
     <>
       <Menu />
       <SayHi />
-      <Welcome classes={styles.welcome} />
-      <Categories classes={styles.categories} />
-      <About classes={styles.about} />
-      <Contact classes={styles.contact} />
+      <Welcome classes={`${styles.section} bg-day`} />
+      <Categories classes={`${styles.section} bg-afternoon`} />
+      <About classes={`${styles.section} bg-evening`} />
+      <Contact classes={`${styles.section} bg-midnight`} />
     </>
   )
 }

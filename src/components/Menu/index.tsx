@@ -42,7 +42,7 @@ function Menu() {
             className={styles.item}
           >
             <div className={styles.itemInner}>
-              <div className={styles.itemLabel}>{item.name}</div>
+              <div className={styles.itemLabel}>{item.label}</div>
               <item.icon size="2rem" />
             </div>
           </div>
