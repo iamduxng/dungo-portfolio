@@ -15,7 +15,7 @@
 }
 
 .hobbyItemContent {
-  @apply relative z-[1] px-20 py-10 w-full h-full text-white flex flex-col;
+  @apply relative z-[1] px-[25%] py-10 w-full h-full text-white flex flex-col;
 }
 
 .hobbyItemContent:before {

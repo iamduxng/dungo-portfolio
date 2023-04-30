@@ -27,12 +27,21 @@ function Games({ hobby }: Props) {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrow: false,
     centerMode: true,
     centerPadding: '80px',
+    arrow: false,
     beforeChange: (oldIndex: number, newIndex: number) => {
       setCurrentSlide(newIndex)
-    }
+    },
+    responsive: [
+      {
+        breakpoint: 540,
+        settings: {
+          centerMode: false,
+          centerPadding: 0
+        }
+      }
+    ]
   }
 
   return (
@@ -63,7 +72,7 @@ function Games({ hobby }: Props) {
                   <div className="my-4 text-center text-lg font-bold">
                     {game.name}
                   </div>
-                  <div className="text-center line-clamp-4">
+                  <div className="text-center line-clamp-3">
                     {game.description}
                   </div>
                 </>
