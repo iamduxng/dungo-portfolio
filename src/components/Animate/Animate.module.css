@@ -1,18 +1,33 @@
 @keyframes leftSlideIn {
   from {
-    transform: translateX(-100%);
+    opacity: 0;
+    transform: translate(var(--fromX, -100%), var(--fromY, 0));
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translate(var(--toX, 0), var(--toY, 0));
   }
 }
 
 @keyframes rightSlideIn {
   from {
-    transform: translateX(100%);
+    opacity: 0;
+    transform: translate(var(--fromX, 100%), var(--fromY, 0));
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translate(var(--toX, 0), var(--toY, 0));
+  }
+}
+
+@keyframes topSlideIn {
+  from {
+    opacity: 0;
+    transform: translate(var(--fromX, 0), var(--fromY, -100%));
+  }
+  to {
+    opacity: 1;
+    transform: translate(var(--toX, 0), var(--toY, 0));
   }
 }
 
@@ -40,16 +55,23 @@
   }
 }
 
-.animate_leftSlideIn {
-  animation-name: leftSlideIn;
+.animate_leftSlideIn,
+.animate_rightSlideIn,
+.animate_topSlideIn {
   animation-duration: var(--duration, 1s);
   animation-fill-mode: forwards;
 }
 
+.animate_leftSlideIn {
+  animation-name: leftSlideIn;
+}
+
 .animate_rightSlideIn {
   animation-name: rightSlideIn;
-  animation-duration: var(--duration, 1s);
-  animation-fill-mode: forwards;
+}
+
+.animate_topSlideIn {
+  animation-name: topSlideIn;
 }
 
 .animate_rotate {

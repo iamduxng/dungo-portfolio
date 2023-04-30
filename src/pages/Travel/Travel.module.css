@@ -1,0 +1,21 @@
+
+
+.albumsGrid {
+  @apply w-full h-full mt-20 grid grid-cols-1 gap-16;
+}
+
+.albumWrapper {
+  @apply flex justify-center items-center;
+}
+
+@screen sm {
+  .albumsGrid {
+    @apply grid grid-cols-2;
+  }
+}
+
+@screen md {
+  .albumsGrid {
+    @apply grid grid-cols-4;
+  }
+}

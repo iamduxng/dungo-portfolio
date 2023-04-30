@@ -4,7 +4,7 @@ import Button from '~/components/Common/Button'
 import styles from './CategoryItemContent.module.css'
 
 export interface CATEGORY_ITEM {
-  label: string
+  name: string
   link: string
   description: string
   icon: string
@@ -23,7 +23,7 @@ function CategoryItemContent({ category, isOpened }: Props) {
       <div className={`${styles.category}`}>
         <img src={category.icon} className={styles.categoryIcon} />
         <Headline tag="h2" classes={styles.categoryLabel}>
-          {category.label}
+          {category.name}
         </Headline>
       </div>
       <div className={`${styles.category} ${styles.back}`}>

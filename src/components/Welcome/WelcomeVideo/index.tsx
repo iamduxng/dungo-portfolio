@@ -16,8 +16,8 @@ function WelcomeVideo({ children }: Props) {
 
   return (
     <div className={styles.welcomeVideo}>
-      <MyModal isOpen={isOpened} onRequestClose={closeVideo} size="md">
-        <div className="w-full max-w-screen-md">
+      <MyModal isOpen={isOpened} onRequestClose={closeVideo}>
+        <div className="w-full py-6">
           <iframe
             className="aspect-video w-full"
             src="https://www.youtube.com/embed/IR-6KE8C4VQ"

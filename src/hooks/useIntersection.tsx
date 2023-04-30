@@ -1,14 +1,19 @@
 import { useState, useEffect } from 'react'
 
-function useIntersection(ref: React.RefObject<Element>) {
+function useIntersection(ref: React.RefObject<Element>, triggerOnce = true) {
   const [isIntersecting, setIsIntersecting] = useState(false)
 
   useEffect(() => {
+    const currentRef = ref.current
+
     const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting)
+
+      if (triggerOnce && entry.isIntersecting && observer && currentRef) {
+        observer.unobserve(currentRef)
+      }
     })
 
-    const currentRef = ref.current
     if (currentRef) {
       observer.observe(currentRef)
     }
