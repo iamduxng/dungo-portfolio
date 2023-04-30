@@ -12,5 +12,5 @@
 }
 
 .headline {
-  @apply text-white text-center mb-4 capitalize;
+  @apply text-white text-center capitalize;
 }

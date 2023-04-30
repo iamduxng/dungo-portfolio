@@ -10,7 +10,7 @@ function Travel() {
   return (
     <div className="">
       <Headline classes="text-white">Travel</Headline>
-      <div className="text-white">
+      <div className="max-w-screen-sm text-white">
         I love to travel, exploring new things, meeting with new people, You can
         call me a travel bug. Travel is my therapy.
       </div>
@@ -22,7 +22,7 @@ function Travel() {
         ))}
       </div>
       <Animate type={ANIMATION_TYPE.FROM_RIGHT}>
-        <img className="ml-auto" src="/memojis/hobbies.png" />
+        <img className="ml-auto" src="/memojis/travel.png" />
       </Animate>
     </div>
   )

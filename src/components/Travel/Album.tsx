@@ -20,6 +20,7 @@ type Props = {
 
 function Album({ album }: Props) {
   const [isOpened, setIsOpened] = useState(false)
+  const [currentSlide, setCurrentSlide] = useState(0)
 
   const openDetails = () => setIsOpened(true)
   const closeDetails = () => setIsOpened(false)
@@ -29,7 +30,9 @@ function Album({ album }: Props) {
       const currentImage = album.images[imgId]
       return (
         <div
-          className={`${styles.modalPagingImage} album-paging`}
+          className={`${styles.modalPagingImage} ${
+            currentSlide === imgId ? styles.modalPagingImageActive : ''
+          }`}
           style={{ backgroundImage: `url('${currentImage.src}')` }}
         />
       )
@@ -38,7 +41,10 @@ function Album({ album }: Props) {
     dotsClass: styles.modalPaging,
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    beforeChange: (oldIndex: number, newIndex: number) => {
+      setCurrentSlide(newIndex)
+    }
   }
 
   return (
@@ -60,7 +66,7 @@ function Album({ album }: Props) {
         isOpen={isOpened}
         onRequestClose={closeDetails}
         headline={album.name}
-        classes="max-w-screen-lg h-screen flex flex-col"
+        classes="max-w-screen-md h-screen flex flex-col"
       >
         <Carousel settings={albumSettings}>
           {album.images.map((image, idx) => (

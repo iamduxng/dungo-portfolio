@@ -1,11 +1,11 @@
-import { useResponsive } from 'ahooks'
 import { HOBBIES } from '~/utils/data'
 import Moon from '~/components/Memoji/Moon'
 import HobbyItem from '~/components/About/HobbyItem'
+import Animate, { ANIMATION_TYPE } from '~/components/Animate'
+import Sports from '~/components/About/Sports'
+import Games from '~/components/About/Games'
 
 import styles from './About.module.css'
-import Animate, { ANIMATION_TYPE } from '~/components/Animate'
-import Sports from './Sports'
 
 type Props = {
   classes: string
@@ -13,7 +13,6 @@ type Props = {
 
 function About({ classes }: Props) {
   const [sport, travel, game] = HOBBIES
-  const responsive = useResponsive()
 
   return (
     <div className={`${styles.about} ${classes}`}>
@@ -26,17 +25,7 @@ function About({ classes }: Props) {
         <Animate type={ANIMATION_TYPE.FROM_TOP} classes={styles.hobbyItem}>
           <HobbyItem hobby={travel} />
         </Animate>
-        <Animate
-          type={ANIMATION_TYPE.FROM_RIGHT}
-          style={
-            responsive.md
-              ? ({ '--toX': '-20%', '--toY': '52%' } as React.CSSProperties)
-              : {}
-          }
-          classes={styles.hobbyItem}
-        >
-          <HobbyItem hobby={game} />
-        </Animate>
+        <Games hobby={game} />
       </div>
     </div>
   )

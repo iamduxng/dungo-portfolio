@@ -9,10 +9,6 @@
   @apply px-4;
 }
 
-li.slick-active > .album-paging:after {
-  content: none;
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
