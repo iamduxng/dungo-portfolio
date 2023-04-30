@@ -3,6 +3,8 @@ import Album from '~/components/Travel/Album'
 
 import styles from './Travel.module.css'
 import Headline from '~/components/Common/Headline'
+import Animate from '~/components/Animate'
+import { ANIMATION_TYPE } from '~/components/Animate'
 
 function Travel() {
   return (
@@ -19,6 +21,9 @@ function Travel() {
           </div>
         ))}
       </div>
+      <Animate type={ANIMATION_TYPE.FROM_RIGHT}>
+        <img className="ml-auto" src="/memojis/hobbies.png" />
+      </Animate>
     </div>
   )
 }

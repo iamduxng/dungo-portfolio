@@ -5,7 +5,7 @@ function Details() {
   return (
     <div className="bg-evening">
       <Menu />
-      <div className="container mx-auto min-h-screen w-full py-20">
+      <div className="container mx-auto min-h-screen w-full px-6 py-20 md:px-0">
         <Outlet />
       </div>
     </div>
