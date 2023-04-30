@@ -4,7 +4,9 @@ import {
   FaUserAstronaut as IconUser,
   FaStarHalfAlt as IconHalfStar,
   FaPlay as IconVideoPlay,
-  FaPhone as IconPhone
+  FaPhone as IconPhone,
+  FaLinkedin as IconLinkedin,
+  FaGithub as IconGithub
 } from 'react-icons/fa'
 
 import {
@@ -26,6 +28,8 @@ import {
   IoBicycle as IconBicycle
 } from 'react-icons/io5'
 
+import { SiGmail as IconGmail } from 'react-icons/si'
+
 export {
   IconRightSidebar,
   IconUser,
@@ -40,5 +44,8 @@ export {
   IconClimbing,
   IconBicycle,
   IconSurfing,
-  IconJumpingRope
+  IconJumpingRope,
+  IconLinkedin,
+  IconGithub,
+  IconGmail
 }

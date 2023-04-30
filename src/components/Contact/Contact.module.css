@@ -1,0 +1,63 @@
+.contact {
+  @apply flex items-center justify-center;
+}
+
+.contactContent {
+  @apply grid gap-8 max-w-screen-lg mx-auto p-8;
+}
+
+.contactForm {
+  @apply rounded-2xl bg-white bg-opacity-20 p-8 grid grid-flow-row gap-4;
+}
+
+.gmail, .linkedin, .github {
+  @apply rounded-lg p-4 bg-teal-300 shadow-md text-xl text-white font-medium;
+  @apply flex items-center cursor-pointer duration-500;
+}
+
+.gmail:hover, .linkedin:hover, .github:hover {
+  @apply scale-105;
+}
+ 
+.gmail {
+  background-color: #EA4335;
+}
+
+.linkedin {
+  background-color: #0077B5;
+}
+
+.github {
+  @apply bg-gray-800;
+}
+
+.contactMemoji {
+  @apply rounded-full bg-gradient-to-br from-sky-300 to-sky-700 border-8 border-sky-500;
+  animation: memoji 0.5s alternate linear infinite;
+}
+
+.contactMemoji > img {
+  @apply scale-125 mb-6;
+}
+
+@keyframes memoji {
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+@screen sm {
+  .contactContent {
+    @apply grid-cols-2;
+  }
+
+  .contactMemoji > img {
+    @apply scale-125;
+  }
+}
+
+@screen md {
+  .contactContent {
+    @apply gap-20;
+  }
+}
