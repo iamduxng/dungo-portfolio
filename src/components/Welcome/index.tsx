@@ -42,7 +42,7 @@ function Welcome({ classes }: Props) {
         >
           <div className="mb-8 max-w-md text-xl">{WELCOME.description}</div>
           <div className={styles.contactMeButtonWrapper}>
-            <Button className={styles.contactMeButton}>
+            <Button as="a" href="#contact" className={styles.contactMeButton}>
               <span className="mr-2">Contact me</span>
               <IconPhone />
             </Button>
