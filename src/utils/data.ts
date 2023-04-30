@@ -44,18 +44,24 @@ export const HOBBIES = [
     name: 'Sports',
     description:
       'When I feel tired, I just think about how great I will feel once I finally reach my goal.',
-    link: ''
+    link: '',
+    memoji: '/memojis/sports.png',
+    bgColor: 'from-blue-300 to-blue-700'
   },
   {
     name: 'Travel',
     description: 'The journey of a thousand miles begins with a single step.',
-    link: '/travel'
+    link: '/travel',
+    memoji: '/memojis/travel.png',
+    bgColor: 'from-violet-300 to-violet-700'
   },
   {
     name: 'Games',
     description:
       'Playing games is the best time of your life, and the more games you get, the better it is',
-    link: '/games'
+    link: '/games',
+    memoji: '/memojis/launch.png',
+    bgColor: 'from-fuchsia-300 to-fuchsia-700'
   }
 ]
 
