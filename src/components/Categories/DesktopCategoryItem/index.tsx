@@ -3,11 +3,11 @@ import CategoryItemContent, {
 } from '~/components/Categories/CategoryItemContent'
 import styles from './DesktopCategoryItem.module.css'
 
-export type CategoryItemProps = React.PropsWithChildren<{
+export type CategoryItemProps = {
   category: CATEGORY_ITEM
   handleOpen?: () => void
   isOpened: boolean
-}>
+}
 
 function DesktopCategoryItem({
   category,

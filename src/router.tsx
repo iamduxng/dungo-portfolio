@@ -1,11 +1,13 @@
 import { createBrowserRouter } from 'react-router-dom'
 import Home from '~/pages/Home'
 import Error from '~/pages/Error'
-import Details from '~/layouts/Details'
 import Skills from '~/pages/Skills'
 import Projects from '~/pages/Projects'
 import Certificates from '~/pages/Certificates'
 import Travel from '~/pages/Travel'
+
+import Category from '~/layouts/Category'
+import About from '~/layouts/About'
 
 const routes = [
   {
@@ -14,23 +16,29 @@ const routes = [
     errorElement: <Error />
   },
   {
-    path: '/',
-    element: <Details />,
+    path: '/category',
+    element: <Category />,
     children: [
       {
-        path: '/skills',
+        path: '/category/skills',
         element: <Skills />
       },
       {
-        path: '/projects',
+        path: '/category/projects',
         element: <Projects />
       },
       {
-        path: '/certificates',
+        path: '/category/certificates',
         element: <Certificates />
-      },
+      }
+    ]
+  },
+  {
+    path: '/about',
+    element: <About />,
+    children: [
       {
-        path: '/travel',
+        path: '/about/travel',
         element: <Travel />
       }
     ]

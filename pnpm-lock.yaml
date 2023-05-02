@@ -8,6 +8,7 @@ specifiers:
   '@tailwindcss/line-clamp': ^0.4.4
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^14.0.0
+  '@types/lodash': ^4.14.194
   '@types/node': ^18.15.3
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
@@ -27,6 +28,7 @@ specifiers:
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-tailwindcss: ^3.10.1
   happy-dom: ^8.9.0
+  lodash: ^4.17.21
   postcss: ^8.4.21
   prettier: 2.8.4
   react: ^18.2.0
@@ -56,6 +58,7 @@ devDependencies:
   '@tailwindcss/line-clamp': 0.4.4_tailwindcss@3.2.7
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
+  '@types/lodash': 4.14.194
   '@types/node': 18.15.3
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -75,6 +78,7 @@ devDependencies:
   eslint-plugin-react-hooks: 4.6.0_eslint@8.36.0
   eslint-plugin-tailwindcss: 3.10.1_tailwindcss@3.2.7
   happy-dom: 8.9.0
+  lodash: 4.17.21
   postcss: 8.4.21
   prettier: 2.8.4
   react-modal: 3.16.1_biqbaboplfbrettd7655fr4n2y
@@ -1822,6 +1826,10 @@ packages:
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
+    dev: true
+
+  /@types/lodash/4.14.194:
+    resolution: {integrity: sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==}
     dev: true
 
   /@types/node/18.15.3:

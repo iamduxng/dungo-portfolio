@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Menu from '~/components/Menu'
 
-function Details() {
+function About() {
   return (
     <div className="bg-evening">
       <Menu />
@@ -12,4 +12,4 @@ function Details() {
   )
 }
 
-export default Details
+export default About

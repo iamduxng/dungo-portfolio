@@ -13,7 +13,7 @@ export const WELCOME = {
 export const CATEGORIES = [
   {
     name: 'Skills',
-    link: '/skills',
+    link: '/category/skills',
     description:
       'If my career was a game, my technical skills would be my power, abilities and weapon.',
     icon: '/elementals/fire.png',
@@ -22,7 +22,7 @@ export const CATEGORIES = [
   },
   {
     name: 'Projects',
-    link: '/projects',
+    link: '/category/projects',
     description: 'Discover all the projects I have been working on.',
     icon: '/elementals/earth.png',
     memoji: '/memojis/trees.png',
@@ -30,7 +30,7 @@ export const CATEGORIES = [
   },
   {
     name: 'Certificates',
-    link: '/certificates',
+    link: '/category/certificates',
     description:
       'Human beings need certificates of education, but knowledge needs no certification.',
     icon: '/elementals/air.png',
@@ -51,7 +51,7 @@ export const HOBBIES = [
   {
     name: 'Travel',
     description: 'The journey of a thousand miles begins with a single step.',
-    link: '/travel',
+    link: '/about/travel',
     memoji: '/memojis/travel.png',
     bgColor: 'from-violet-200 to-violet-500'
   },
@@ -203,5 +203,164 @@ export const GAMES = [
     points: 8,
     description:
       'Join Aloy as she braves the Forbidden West – a majestic but dangerous frontier that conceals mysterious new threats.'
+  }
+]
+
+export const SKILLS = [
+  {
+    name: 'Javascript',
+    icon: 'IconJS',
+    level: 4,
+    type: 'javascript'
+  },
+  {
+    name: 'Typescript',
+    icon: 'IconTypescript',
+    level: 3,
+    type: 'javascript'
+  },
+  {
+    name: 'React',
+    icon: 'IconReact',
+    level: 4,
+    type: 'javascript'
+  },
+  {
+    name: 'Vue',
+    icon: 'IconVue',
+    level: 4,
+    type: 'javascript'
+  },
+  {
+    name: 'Angular',
+    icon: 'IconAngular',
+    level: 3,
+    type: 'javascript'
+  },
+  {
+    name: 'NodeJS',
+    icon: 'IconNode',
+    level: 3,
+    type: 'javascript'
+  },
+  {
+    name: 'Nuxt',
+    icon: 'IconNuxt',
+    level: 3,
+    type: 'javascript'
+  },
+  {
+    name: 'Next',
+    icon: 'IconNext',
+    level: 3,
+    type: 'javascript'
+  },
+  {
+    name: 'Redux',
+    icon: 'IconRedux',
+    level: 3,
+    type: 'javascript'
+  },
+  {
+    name: 'Senbird',
+    icon: 'IconSenbird',
+    level: 3,
+    type: 'javascript'
+  },
+  {
+    name: 'CSS',
+    icon: 'IconCSS',
+    level: 4,
+    type: 'ui/ux'
+  },
+  {
+    name: 'HTML',
+    icon: 'IconHTML',
+    level: 4,
+    type: 'ui/ux'
+  },
+  {
+    name: 'Accessibility',
+    icon: 'IconAccessibility',
+    level: 2,
+    type: 'ui/ux'
+  },
+  {
+    name: 'Accessibility',
+    icon: 'IconAccessibility',
+    level: 2,
+    type: 'ui/ux'
+  },
+  {
+    name: 'Tailwind',
+    icon: 'IconTailwind',
+    level: 4,
+    type: 'ui/ux'
+  },
+  {
+    name: 'Senbird',
+    icon: 'IconSenbird',
+    level: 3,
+    type: 'ui/ux'
+  },
+  {
+    name: 'PHP',
+    icon: 'IconPHP',
+    level: 2,
+    type: 'others'
+  },
+  {
+    name: 'Laravel',
+    icon: 'IconLaravel',
+    level: 2,
+    type: 'others'
+  },
+  {
+    name: 'Wordpress',
+    icon: 'IconWordpress',
+    level: 2,
+    type: 'others'
+  },
+  {
+    name: 'Jenkins',
+    icon: 'IconJenkins',
+    level: 3,
+    type: 'others'
+  },
+  {
+    name: 'GTM',
+    icon: 'IconGTM',
+    level: 3,
+    type: 'others'
+  },
+  {
+    name: 'Adobe',
+    icon: 'IconAdobe',
+    level: 3,
+    type: 'others'
+  },
+  {
+    name: 'Web3',
+    icon: 'IconWeb3',
+    level: 1,
+    type: 'others'
+  },
+  {
+    name: 'PWA',
+    icon: 'IconPWA',
+    level: 3,
+    type: 'others'
+  },
+  {
+    name: 'Tensorflow',
+    icon: 'IconTensorflow',
+    level: 1,
+    type: 'others'
+  },
+  {
+    name: 'Senbird',
+    icon: 'IconSenbird',
+    level: 3,
+    type: 'others'
   }
 ]

@@ -1,0 +1,17 @@
+.flipCard {
+  @apply absolute w-full h-full flex flex-col items-center justify-center p-8;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flipCard.back {
+  transform: rotateY(180deg);
+}
+
+.flipCard > * {
+  @apply duration-500;
+}
+
+.flipCard:hover > * {
+  transform: scale(1.1);
+}

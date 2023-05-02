@@ -1,0 +1,8 @@
+.skillItem {
+  @apply relative w-full h-72 border border-red-500 shadow-lg cursor-pointer duration-500 rounded-2xl bg-gradient-to-br;
+  transform-style: preserve-3d;
+}
+
+.skillItemOpened {
+  transform: rotateY(180deg) !important;
+}

@@ -1,0 +1,15 @@
+.skillsGrid {
+  @apply mt-20 grid grid-cols-1 gap-16;
+}
+
+@screen sm {
+  .skillsGrid {
+    @apply grid-cols-2;
+  }  
+}
+
+@screen md {
+  .skillsGrid {
+    @apply grid-cols-3;
+  }  
+}
