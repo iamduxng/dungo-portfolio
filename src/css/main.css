@@ -21,6 +21,7 @@
 }
 
 .bg-day {
+  @apply min-h-screen;
   background: #ffac6f;
   background: linear-gradient(
     to bottom,
@@ -33,7 +34,7 @@
 }
 
 .bg-afternoon {
-  @apply h-screen;
+  @apply min-h-screen;
   background: #efeebc;
   background: linear-gradient(
     to bottom,
@@ -46,6 +47,7 @@
 }
 
 .bg-evening {
+  @apply min-h-screen;
   background: #07729f;
   background: linear-gradient(
     to bottom,
@@ -58,6 +60,7 @@
 }
 
 .bg-midnight {
+  @apply min-h-screen;
   background: #00182b;
   background: linear-gradient(
     to bottom,

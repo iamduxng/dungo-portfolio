@@ -1,8 +1,46 @@
 .skillItem {
-  @apply relative w-full h-72 border border-red-500 shadow-lg cursor-pointer duration-500 rounded-2xl bg-gradient-to-br;
+  @apply relative w-full h-72 shadow-md cursor-pointer rounded-2xl;
+  @apply transition-all duration-1000;
   transform-style: preserve-3d;
 }
 
+.skillItem > * {
+  @apply bg-gradient-to-b from-teal-100 to-teal-500 rounded-2xl;
+}
+
 .skillItemOpened {
+  @apply col-span-2;
   transform: rotateY(180deg) !important;
+}
+
+/* https://codepen.io/Huhtamaki/pen/GPzwPY */
+.skillItemOpened:before, .skillItemOpened:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 60s linear infinite;
+  @apply rounded-2xl;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.skillItemOpened:after {
+  filter: blur(50px);
 }

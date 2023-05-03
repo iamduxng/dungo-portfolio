@@ -1,4 +1,5 @@
 import FlipCardContent from '~/components/Common/FlipCardContent'
+import Headline from '~/components/Common/Headline'
 
 import styles from './SkillItem.module.css'
 
@@ -11,12 +12,13 @@ export interface SKILL {
 
 type Props = {
   name: string
+  gif: string
   skills: Array<SKILL>
   isOpened: boolean
   handleOpen: () => void
 }
 
-function SkillItem({ name, skills, isOpened, handleOpen }: Props) {
+function SkillItem({ name, gif, skills, isOpened, handleOpen }: Props) {
   return (
     <div
       className={`${styles.skillItem} ${
@@ -24,7 +26,19 @@ function SkillItem({ name, skills, isOpened, handleOpen }: Props) {
       }`}
       onClick={handleOpen}
     >
-      <FlipCardContent front={<>{name}</>} back={<>Back</>} />
+      <FlipCardContent
+        front={
+          <>
+            <Headline tag="h3" classes="uppercase">
+              {name}
+            </Headline>
+            <div>
+              <img src={`/gifs/${gif}`} />
+            </div>
+          </>
+        }
+        back={<>Back</>}
+      />
     </div>
   )
 }

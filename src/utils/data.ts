@@ -364,3 +364,5 @@ export const SKILLS = [
     type: 'others'
   }
 ]
+
+export const SKILL_GIFS = ['/gow.gif', '/hfw.gif', '/ff7.gif']
