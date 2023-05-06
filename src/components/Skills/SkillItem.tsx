@@ -47,8 +47,6 @@ function SkillItem({ name, gif, skills }: Props) {
     groupBy(skills, (skill: SKILL) => skill.level)
   ).map(([key, value]) => ({ level: key, value }))
 
-  console.log(groupedSkillsByLevel)
-
   useEffect(() => {
     let timeout = null
     if (isOpened) {
