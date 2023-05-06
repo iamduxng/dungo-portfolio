@@ -1,0 +1,80 @@
+.skillItem, .modalSkill {
+  @apply relative w-full h-full shadow-md cursor-pointer p-8;
+  @apply bg-cover bg-no-repeat bg-center shadow-xl border border-black;
+  background-image: url('/sky.png');
+  border-image-source: url('/border-frame.png');
+  border-image-repeat: stretch;
+  border-image-outset: 0;
+  border-image-slice: 40;
+  border-image-width: 20px;
+  border-style: solid;
+}
+
+.skillItem > * {
+  @apply duration-500;
+}
+
+.skillItem:hover > * {
+  @apply scale-105;
+}
+
+.skillGifWrapper {
+  @apply w-full h-80 shadow-xl p-2 flex justify-center;
+}
+
+.skillItem:hover .skillGifWrapper {
+  @apply p-0.5 shadow-lg;
+}
+
+.skillGif {
+  @apply bg-cover bg-center bg-no-repeat w-full h-full;
+  background-image: var(--gifBg, '')
+}
+
+.skillGifWrapper,
+.skillHeadline {
+  @apply bg-gradient-to-r from-amber-200 to-amber-500;
+}
+
+.skillHeadline {
+  @apply text-center uppercase bg-clip-text text-transparent my-2;
+}
+
+@screen md {
+  .skillGif {
+    background-image: var(--staticBg, '')
+  }
+
+  .skillItem:hover .skillGif {
+    background-image: var(--gifBg, '')
+  }
+}
+
+.modalSkill {
+  @apply duration-500;
+  transform-style: preserve-3d;
+}
+
+.modalSkillOpened {
+  transform: rotateY(180deg) !important;
+}
+
+.modalSkillGroupByLevel {
+  @apply flex flex-col items-center mb-16;
+}
+
+.modalSkillLevel {
+  @apply grid grid-flow-col gap-2 text-amber-400 my-2;
+}
+
+.modalSkillGroup {
+  @apply flex flex-wrap justify-center;
+}
+
+.modalSkillIcon {
+  @apply w-20 h-20 bg-teal-300 rounded-full flex items-center justify-center;
+}
+
+.modalSkillName {
+  @apply text-sm font-bold text-center text-white mt-4;
+}

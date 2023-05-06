@@ -1,51 +1,60 @@
-import { BsLayoutTextSidebar as IconRightSidebar } from 'react-icons/bs'
+export {
+  BsLayoutTextSidebar as IconRightSidebar,
+  BsFillStarFill as IconStarFill
+} from 'react-icons/bs'
 
-import {
+export {
   FaUserAstronaut as IconUser,
   FaStarHalfAlt as IconHalfStar,
   FaPlay as IconVideoPlay,
   FaPhone as IconPhone,
   FaLinkedin as IconLinkedin,
-  FaGithub as IconGithub
+  FaGithub as IconGithub,
+  FaPhp as IconPhp,
+  FaLaravel as IconLaravel,
+  FaWordpress as IconWordpress,
+  FaJenkins as IconJenkins
 } from 'react-icons/fa'
 
-import {
+export {
   MdWorkHistory as IconWork,
   MdSurfing as IconSurfing
 } from 'react-icons/md'
 
-import { CgGym as IconGym } from 'react-icons/cg'
+export { CgGym as IconGym } from 'react-icons/cg'
 
-import { BiRun as IconRun, BiSwim as IconSwim } from 'react-icons/bi'
+export { BiRun as IconRun, BiSwim as IconSwim } from 'react-icons/bi'
 
-import {
+export {
   GiMountainClimbing as IconClimbing,
   GiJumpingRope as IconJumpingRope
 } from 'react-icons/gi'
 
-import {
+export {
   IoCloseOutline as IconClose,
-  IoBicycle as IconBicycle
+  IoBicycle as IconBicycle,
+  IoLogoJavascript as IconJS,
+  IoLogoReact as IconReact,
+  IoLogoVue as IconVue,
+  IoLogoAngular as IconAngular,
+  IoLogoNodejs as IconNode,
+  IoLogoCss3 as IconCSS,
+  IoLogoHtml5 as IconHTML,
+  IoAccessibility as IconAccessibility,
+  IoLogoPwa as IconPwa,
+  IoChatbubbles as IconSendbird
 } from 'react-icons/io5'
 
-import { SiGmail as IconGmail } from 'react-icons/si'
-
 export {
-  IconRightSidebar,
-  IconUser,
-  IconWork,
-  IconHalfStar,
-  IconClose,
-  IconVideoPlay,
-  IconPhone,
-  IconGym,
-  IconRun,
-  IconSwim,
-  IconClimbing,
-  IconBicycle,
-  IconSurfing,
-  IconJumpingRope,
-  IconLinkedin,
-  IconGithub,
-  IconGmail
-}
+  SiTypescript as IconTypescript,
+  SiNuxtdotjs as IconNuxtJs,
+  SiNextdotjs as IconNextJs,
+  SiRedux as IconRedux,
+  SiTailwindcss as IconTailwind,
+  SiGoogletagmanager as IconGtm,
+  SiAdobe as IconAdobe,
+  SiWeb3Dotjs as IconWeb3,
+  SiTensorflow as IconTensorflow
+} from 'react-icons/si'
+
+export { SiGmail as IconGmail } from 'react-icons/si'
