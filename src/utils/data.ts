@@ -245,25 +245,19 @@ export const SKILLS = [
   },
   {
     name: 'Nuxt',
-    icon: 'IconNuxt',
+    icon: 'IconNuxtJs',
     level: 3,
     type: 'javascript'
   },
   {
     name: 'Next',
-    icon: 'IconNext',
+    icon: 'IconNextJs',
     level: 3,
     type: 'javascript'
   },
   {
     name: 'Redux',
     icon: 'IconRedux',
-    level: 3,
-    type: 'javascript'
-  },
-  {
-    name: 'Senbird',
-    icon: 'IconSenbird',
     level: 3,
     type: 'javascript'
   },
@@ -298,14 +292,8 @@ export const SKILLS = [
     type: 'ui/ux'
   },
   {
-    name: 'Senbird',
-    icon: 'IconSenbird',
-    level: 3,
-    type: 'ui/ux'
-  },
-  {
     name: 'PHP',
-    icon: 'IconPHP',
+    icon: 'IconPhp',
     level: 2,
     type: 'others'
   },
@@ -329,7 +317,7 @@ export const SKILLS = [
   },
   {
     name: 'GTM',
-    icon: 'IconGTM',
+    icon: 'IconGtm',
     level: 3,
     type: 'others'
   },
@@ -347,7 +335,7 @@ export const SKILLS = [
   },
   {
     name: 'PWA',
-    icon: 'IconPWA',
+    icon: 'IconPwa',
     level: 3,
     type: 'others'
   },
@@ -358,8 +346,8 @@ export const SKILLS = [
     type: 'others'
   },
   {
-    name: 'Senbird',
-    icon: 'IconSenbird',
+    name: 'Sendbird',
+    icon: 'IconSendbird',
     level: 3,
     type: 'others'
   }

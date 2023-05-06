@@ -1,4 +1,4 @@
-.skillItem {
+.skillItem, .modalSkill {
   @apply relative w-full h-full shadow-md cursor-pointer p-8;
   @apply bg-cover bg-no-repeat bg-center shadow-xl border border-black;
   background-image: url('/sky.png');
@@ -18,38 +18,6 @@
   @apply scale-105;
 }
 
-/* https://codepen.io/Huhtamaki/pen/GPzwPY */
-/* .skillItemOpened:before, .skillItemOpened:after {
-  content: '';
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-    #0000ff, #00ff00,#ffff00, #ff0000);
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  z-index: -1;
-  animation: steam 60s linear infinite;
-  @apply rounded-2xl;
-}
-
-@keyframes steam {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.skillItemOpened:after {
-  filter: blur(50px);
-} */
-
 .skillGifWrapper {
   @apply w-full h-80 shadow-xl p-2 flex justify-center;
 }
@@ -60,10 +28,6 @@
 
 .skillGif {
   @apply bg-cover bg-center bg-no-repeat w-full h-full;
-  background-image: var(--staticBg, '')
-}
-
-.skillItem:hover .skillGif {
   background-image: var(--gifBg, '')
 }
 
@@ -73,5 +37,44 @@
 }
 
 .skillHeadline {
-  @apply text-center uppercase mt-16 bg-clip-text text-transparent;
+  @apply text-center uppercase bg-clip-text text-transparent my-2;
+}
+
+@screen md {
+  .skillGif {
+    background-image: var(--staticBg, '')
+  }
+
+  .skillItem:hover .skillGif {
+    background-image: var(--gifBg, '')
+  }
+}
+
+.modalSkill {
+  @apply duration-500;
+  transform-style: preserve-3d;
+}
+
+.modalSkillOpened {
+  transform: rotateY(180deg) !important;
+}
+
+.modalSkillGroupByLevel {
+  @apply flex flex-col items-center mb-16;
+}
+
+.modalSkillLevel {
+  @apply grid grid-flow-col gap-2 text-amber-400 my-2;
+}
+
+.modalSkillGroup {
+  @apply flex flex-wrap justify-center;
+}
+
+.modalSkillIcon {
+  @apply w-20 h-20 bg-teal-300 rounded-full flex items-center justify-center;
+}
+
+.modalSkillName {
+  @apply text-sm font-bold text-center text-white mt-4;
 }

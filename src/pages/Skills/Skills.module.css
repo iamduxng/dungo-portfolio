@@ -2,13 +2,13 @@
   @apply mt-20 grid grid-cols-1 gap-8;
 }
 
-@screen sm {
+@screen md {
   .skillsGrid {
     @apply grid-cols-2;
   }  
 }
 
-@screen md {
+@screen lg {
   .skillsGrid {
     @apply grid-cols-3;
   }  

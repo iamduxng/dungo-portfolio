@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { groupBy } from 'lodash'
 import { SKILLS, SKILL_GIFS } from '~/utils/data'
 import Headline from '~/components/Common/Headline'
@@ -9,10 +8,6 @@ import styles from './Skills.module.css'
 const skillGroups = groupBy(SKILLS, (skill: SKILL) => skill.type)
 
 function Skills() {
-  const [openingType, setOpeningType] = useState('')
-
-  const handleOpen = (type: string) => setOpeningType(type)
-
   return (
     <div className="">
       <Headline>Skills</Headline>
@@ -28,8 +23,6 @@ function Skills() {
             name={key}
             gif={SKILL_GIFS[idx]}
             skills={value}
-            isOpened={openingType === key}
-            handleOpen={() => handleOpen(key)}
           />
         ))}
       </div>
