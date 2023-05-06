@@ -1,5 +1,5 @@
 .flipCard {
-  @apply absolute w-full h-full flex flex-col items-center justify-center p-8;
+  @apply absolute w-full min-h-full flex flex-col items-center justify-center p-8;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -13,5 +13,5 @@
 }
 
 .flipCard:hover > * {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }

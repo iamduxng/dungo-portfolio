@@ -365,4 +365,4 @@ export const SKILLS = [
   }
 ]
 
-export const SKILL_GIFS = ['/gow.gif', '/hfw.gif', '/ff7.gif']
+export const SKILL_GIFS = ['/gow', '/hfw', '/ff7']

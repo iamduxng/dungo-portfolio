@@ -13,7 +13,7 @@ function Home() {
       <Menu />
       <SayHi />
       <Welcome classes={`${styles.section} bg-day`} />
-      <Categories classes={`${styles.section} bg-afternoon`} />
+      <Categories classes={`${styles.section} bg-afternoon h-screen`} />
       <About classes={`${styles.section} bg-evening`} />
       <Contact classes={`${styles.section} bg-midnight`} />
     </>

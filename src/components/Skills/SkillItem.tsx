@@ -26,19 +26,21 @@ function SkillItem({ name, gif, skills, isOpened, handleOpen }: Props) {
       }`}
       onClick={handleOpen}
     >
-      <FlipCardContent
-        front={
-          <>
-            <Headline tag="h3" classes="uppercase">
-              {name}
-            </Headline>
-            <div>
-              <img src={`/gifs/${gif}`} />
-            </div>
-          </>
-        }
-        back={<>Back</>}
-      />
+      <div className={styles.skillGifWrapper}>
+        <div
+          className={styles.skillGif}
+          style={
+            {
+              '--staticBg': `url(/statics/${gif}.jpg)`,
+              '--gifBg': `url(/gifs/${gif}.gif)`
+            } as React.CSSProperties
+          }
+        />
+      </div>
+
+      <Headline tag="h3" classes={styles.skillHeadline}>
+        {name}
+      </Headline>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 .skillsGrid {
-  @apply mt-20 grid grid-cols-1 gap-16;
+  @apply mt-20 grid grid-cols-1 gap-8;
 }
 
 @screen sm {
