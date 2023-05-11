@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { groupBy } from 'lodash'
 import { lazyLoadComponent } from '~/utils'
 import FlipCardContent from '~/components/Common/FlipCardContent'

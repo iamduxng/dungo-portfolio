@@ -353,4 +353,4 @@ export const SKILLS = [
   }
 ]
 
-export const SKILL_GIFS = ['/gow', '/hfw', '/ff7']
+export const SKILL_GIFS = ['gow', 'hfw', 'ff7']
