@@ -240,7 +240,7 @@ export const SKILLS = [
   {
     name: 'NodeJS',
     icon: 'IconNode',
-    level: 3,
+    level: 2,
     type: 'javascript'
   },
   {

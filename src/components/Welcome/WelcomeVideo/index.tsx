@@ -20,7 +20,7 @@ function WelcomeVideo({ children }: Props) {
         <div className="w-full py-6">
           <iframe
             className="aspect-video w-full"
-            src="https://www.youtube.com/embed/IR-6KE8C4VQ"
+            src="https://www.youtube.com/embed/2-crBg6wpp0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
