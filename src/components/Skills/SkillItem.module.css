@@ -1,8 +1,8 @@
 .skillItem, .modalSkill {
   @apply relative w-full h-full shadow-md cursor-pointer p-8;
   @apply bg-cover bg-no-repeat bg-center shadow-xl border border-black;
-  background-image: url('sky.png');
-  border-image-source: url('border-frame.png');
+  background-image: url('/sky.png');
+  border-image-source: url('/border-frame.png');
   border-image-repeat: stretch;
   border-image-outset: 0;
   border-image-slice: 40;
