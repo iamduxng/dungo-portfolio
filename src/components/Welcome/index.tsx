@@ -50,7 +50,10 @@ function Welcome({ classes }: Props) {
         </Animate>
       </div>
 
-      <Animate type={ANIMATION_TYPE.FROM_RIGHT} classes="w-full h-full">
+      <Animate
+        type={ANIMATION_TYPE.FROM_RIGHT}
+        classes="w-full h-full mx-auto max-w-screen-sm"
+      >
         <WelcomeVideo>
           <HexagonItem classes={styles.myAvatarWrapper}></HexagonItem>
           <HexagonItem

@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { groupBy } from 'lodash'
 import { lazyLoadComponent } from '~/utils'
 import FlipCardContent from '~/components/Common/FlipCardContent'
@@ -126,8 +126,8 @@ function SkillItem({ name, gif, skills }: Props) {
             className={styles.skillGif}
             style={
               {
-                '--staticBg': `url(/statics/${gif}.jpg)`,
-                '--gifBg': `url(/gifs/${gif}.gif)`
+                '--staticBg': `url('../statics/${gif}.jpg')`,
+                '--gifBg': `url('../gifs/${gif}.gif')`
               } as React.CSSProperties
             }
           />

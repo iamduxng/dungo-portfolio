@@ -11,6 +11,6 @@ export const debounce = (fn: (...fnArgs: any) => void, ms = 300) => {
 export const lazyLoadComponent = (resolver: () => void, name = 'default') => {
   return lazy(async () => {
     const resolved = await resolver()
-    return { default: resolved[name] }
+    return { default: (resolved as any)[name] }
   })
 }

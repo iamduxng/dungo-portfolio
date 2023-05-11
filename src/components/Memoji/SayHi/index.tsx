@@ -11,7 +11,7 @@ function SayHi() {
   if (isOpened) {
     return (
       <div className={styles.wrapper}>
-        <img src="/memojis/hi.png" className={styles.image} />
+        <img src="memojis/hi.png" className={styles.image} />
 
         <Animate
           type={ANIMATION_TYPE.POP_IN}

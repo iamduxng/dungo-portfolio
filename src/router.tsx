@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import Home from '~/pages/Home'
 import Error from '~/pages/Error'
 import Skills from '~/pages/Skills'
@@ -45,4 +45,7 @@ const routes = [
   }
 ]
 
-export default createBrowserRouter(routes)
+// TODO: HashRouter was used for GH Page
+// Change back to BrowserRouter when deploy on other server
+// https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
+export default createHashRouter(routes)

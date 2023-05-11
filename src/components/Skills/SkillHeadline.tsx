@@ -7,9 +7,9 @@ type Props = {
 function SkillHeadline({ classes, children }: React.PropsWithChildren<Props>) {
   return (
     <div className={`${styles.skillHeadline} ${classes}`}>
-      <img src="/title-decoration.png" />
+      <img src="title-decoration.png" />
       {children}
-      <img src="/title-decoration-bottom.png" />
+      <img src="title-decoration-bottom.png" />
     </div>
   )
 }

@@ -1,5 +1,6 @@
 {
   "name": "dungo-portfolio",
+  "homepage": "https://iamduxng.github.io/dungo-portfolio/",
   "description": "Dung Ngo's portfolio was made in React, Typescript, Tailwind and Vite",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +16,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "lint": "eslint src --max-warnings=0",
-    "typecheck": "tsc --project tsconfig.json --noEmit"
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -50,6 +52,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.10.1",
+    "gh-pages": "^5.0.0",
     "happy-dom": "^8.9.0",
     "lodash": "^4.17.21",
     "postcss": "^8.4.21",
