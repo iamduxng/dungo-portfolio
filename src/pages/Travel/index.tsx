@@ -22,7 +22,7 @@ function Travel() {
         ))}
       </div>
       <Animate type={ANIMATION_TYPE.FROM_RIGHT}>
-        <img className="ml-auto" src="/memojis/travel.png" />
+        <img className="ml-auto" src="memojis/travel.png" />
       </Animate>
     </div>
   )

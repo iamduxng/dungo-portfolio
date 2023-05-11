@@ -126,8 +126,8 @@ function SkillItem({ name, gif, skills }: Props) {
             className={styles.skillGif}
             style={
               {
-                '--staticBg': `url(/statics/${gif}.jpg)`,
-                '--gifBg': `url(/gifs/${gif}.gif)`
+                '--staticBg': `url(statics/${gif}.jpg)`,
+                '--gifBg': `url(gifs/${gif}.gif)`
               } as React.CSSProperties
             }
           />

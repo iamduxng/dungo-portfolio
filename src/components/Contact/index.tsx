@@ -58,7 +58,7 @@ function Contact({ classes }: Props) {
           classes="flex items-center opacity-0"
         >
           <div className={styles.contactMemoji}>
-            <img src="/memojis/contact.png" />
+            <img src="memojis/contact.png" />
           </div>
         </Animate>
       </div>

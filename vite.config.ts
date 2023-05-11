@@ -5,7 +5,7 @@ import path from 'path'
 
 // https://vitejs.dev/config https://vitest.dev/config
 export default defineConfig({
-  base: '/dungo-portfolio/',
+  base: '/',
   resolve: {
     alias: {
       '~': path.resolve(__dirname, 'src')

@@ -38,7 +38,7 @@ function Games({ hobby }: Props) {
         breakpoint: 540,
         settings: {
           centerMode: false,
-          centerPadding: 0
+          centerPadding: '0'
         }
       }
     ]
