@@ -354,3 +354,81 @@ export const SKILLS = [
 ]
 
 export const SKILL_GIFS = ['gow', 'hfw', 'ff7']
+
+export const PROJECTS = [
+  {
+    from: 'Nov, 2021',
+    to: 'Now',
+    name: 'Motorhome & Campervan Hire In Europe & USA',
+    techStack:
+      'React, Vue, Nuxt, Next, CI/CD Jenkins, Automation test, Trunk based development, GTM, SSR',
+    description:
+      'Working as Senior FE developer in a team of +30 members located in both Munich and Vietnam. Our daily work is delivering high-quality code by implementing pair working and integrating both Unit and Automation tests. Also, to support a comprehensive work, The team applies the Trunk-based development by deploying one feature environment for each Jira issue. I managed multiple sites in this project, built 2 single-handled sites from scratch. I worked closely with the team and PO through daily meeting, refinement. Furthermore, we hold a Sprint Review meeting after finishing each sprint (Agile me. Therefore, I got an extra responsibility for the Demo presentation of our new features to the customers every 2 weeks. Working in the Travel and Tourism industry gained me the chance to understand more business in Payment Processing (PayPal, Banking, Adyen POS), Booking, handling conflict events and B2B orders.'
+  },
+  {
+    from: 'Jun, 2021',
+    to: 'Aug, 2021',
+    name: 'Fitness Application',
+    techStack: 'React, Laravel, Inertial JS, PWA',
+    description:
+      'We received the requirement from a Vietnam stakeholder to build a TV app. The app was used to display demo exercises, timer, sets and reps for a Fitness Group Training class. I also developed a Back office site for admin using Laravel to manage classes and courses since we would like to extend the system to be reusable and scalable for every Gym center.'
+  },
+  {
+    from: 'Apr, 2020',
+    to: '0ct, 2021',
+    name: 'German Dating App',
+    techStack:
+      'Vue, Sendbird, Leanplum, Sentry, Laravel, Sendbird, Pusher, Leanplum.',
+    description:
+      'Working as full stack developer (mostly FE) with responsibility for building a brand new version 2.0. The version 1.0 used old stack: Symphony and static HTML, CSS. The new site required the latest React version which needed to be integrated with Laravel on BE. In addition, The customer highly prioritized the performance and responsive design, so we had to focus on optimization of the code, resources and new design on Figma.'
+  },
+  {
+    from: 'Jan, 2020',
+    to: 'Apr, 2020',
+    name: 'Healthcare Project For Dubai Government',
+    techStack: 'Angular, Java, Docker',
+    description:
+      'I am responsible for maintaining the multiple sites in a Healthcare system. I receive the requirement from the customer to maintain the process of booking and manage appointments between patients and clinics/doctors. The system integrates all data of UAE citizens, besides managing information of Clinics, Doctors, Medical data.'
+  },
+  {
+    from: 'Oct, 2019',
+    to: 'Jan, 2020',
+    name: 'Vietnamese Online Dating App',
+    techStack: 'React, Vue, Sendbird, PWA',
+    description:
+      'My work is turning a Figma UI/UX design to a reality PWA site and delivering a project which requires high responsiveness, beautiful interface and a high Lighthouse score (above 90). Also, the app needs to work perfectly on both browser and mobile app (PWA).'
+  },
+  {
+    from: 'Apr, 2019',
+    to: 'Oct, 2019',
+    name: 'POS Management System',
+    techStack:
+      'As a Frontend developer, my responsibility is maintaining the multisite application. The project marks my first step in approaching the authentication method of Single Sign-On.',
+    description: 'Critical path, Atomic design, PHP, WordPress, Gulp'
+  },
+  {
+    from: 'Mar, 2018',
+    to: 'Jun, 2018',
+    name: 'Wordpress Migration Project',
+    techStack: 'React, Next, Laravel, PWA, React Native',
+    description:
+      'Leading a Frontend team of three developers. I was in charge of migrating the system from EpiServer to WordPress. As a team leader, I had permission to decide the tech stack. Apart from integrating new tools, I also organized the handover session to inherit existing technology from the team who is owner of the old version.'
+  },
+  {
+    from: 'Jan, 2017',
+    to: 'Jul, 2017',
+    name: 'BN WordPress and DNP adhoc pages',
+    techStack:
+      'Jira, Task scheduler, Zeplin.io, WordPress, PHP, Grunt, Gulp, RequireJS',
+    description:
+      'Our stakeholder is one of Niteco’s biggest customers - Bonnier News. This is a single-handed project where I multitasked on Backend, Frontend, QA, Scrum Master. As well as my direct report is Program Manager, I touched base with the stakeholder daily. Therefore, I gained more experience in resolving conicts, learned to set things right.'
+  },
+  {
+    from: 'Jan, 2017',
+    to: 'Dec, 2017',
+    name: 'University of Engineering & Techonology - Thesis Management System',
+    techStack: 'Webpack, React, Redux, PHP, REST API, MySQL',
+    description:
+      'The project accounts for my dissertation at university. That was my rst time working in a team of 5 developers and a stakeholder. Besides designing our own UI/UX prototype, I worked on both Backend (PHP, Restful API) and Frontend (React, Redux) sides. As a result, the success of this project inspired me to become a Frontend engineer.'
+  }
+]

@@ -1,0 +1,9 @@
+.projectList {
+  @apply flex flex-col my-16;
+}
+
+@screen md {
+  .projectList {
+    @apply max-w-screen-lg mx-auto;
+  }
+}
