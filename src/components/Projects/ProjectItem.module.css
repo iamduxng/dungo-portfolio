@@ -1,0 +1,37 @@
+.project {
+  @apply relative self-end p-8 w-full;
+  box-shadow: inset 4px 0 0 0 #5eead4;
+}
+
+.project:before {
+  content: '';
+  @apply absolute -left-[0.65rem] w-6 h-6 bg-teal-300 rounded-full;
+}
+
+
+.projectContent {
+  @apply relative;
+}
+
+.projectContent > * {
+  @apply mb-4;
+}
+
+@screen md {
+  .project {
+    @apply w-1/2;
+  }
+
+  .project:nth-child(odd):before {
+    @apply -right-[0.85rem] left-auto;
+  }
+
+  .project:nth-child(odd) {
+    @apply self-start;
+    box-shadow: 4px 0 0 0 #5eead4;
+  }
+
+  .project:nth-child(odd) .projectContent > * {
+    @apply text-right;
+  }
+}
