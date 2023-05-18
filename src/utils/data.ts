@@ -432,3 +432,22 @@ export const PROJECTS = [
       'The project accounts for my dissertation at university. That was my rst time working in a team of 5 developers and a stakeholder. Besides designing our own UI/UX prototype, I worked on both Backend (PHP, Restful API) and Frontend (React, Redux) sides. As a result, the success of this project inspired me to become a Frontend engineer.'
   }
 ]
+
+export const CERTIFICATES = [
+  {
+    name: 'Joy of React',
+    badge: 'badges/joy-of-react.png',
+    certificate: 'certificates/joy-of-react.jpg'
+  },
+  {
+    name: 'Daily Dev',
+    badge: 'badges/dailydev.png',
+    certificate:
+      'https://api.daily.dev/devcards/0ea396b05d7445a99e8169df52b9b755.png'
+  },
+  {
+    name: 'IELTS',
+    badge: 'badges/ielts.png',
+    certificate: ''
+  }
+]

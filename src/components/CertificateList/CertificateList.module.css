@@ -1,0 +1,57 @@
+.certificateList {
+  @apply flex flex-col space-y-8;
+}
+
+.badges,
+.certificate {
+  @apply w-full h-full;
+}
+
+.badges {
+  @apply grid grid-cols-3 gap-8;
+}
+
+.badge {
+  @apply flex flex-col items-center duration-150 ;
+}
+
+.badgeName {
+  @apply font-bold text-white text-center mt-2 text-lg;
+}
+
+.badgeName,
+.commingSoonText {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-amber-500;
+}
+
+.badge > img {
+  @apply w-full cursor-pointer;
+}
+
+.badge:hover {
+  @apply scale-105;
+}
+
+.commingSoon {
+  @apply w-full h-96 bg-gradient-to-br from-teal-300 to-teal-500;
+  @apply rounded-2xl p-8 flex items-center justify-center;
+}
+
+@screen md {
+  .certificateList {
+    @apply flex-row space-x-16 space-y-0;
+  }
+
+  .badges {
+    @apply w-1/3;
+  }
+
+  .certificate {
+    @apply w-2/3 duration-500;
+    transform: perspective(1500px);
+  }
+
+  .certificate:hover {
+    transform: perspective(1500px) rotateX(10deg);
+  }
+}
