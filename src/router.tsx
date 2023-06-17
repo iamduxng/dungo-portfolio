@@ -8,6 +8,7 @@ import Travel from '~/pages/Travel'
 
 import Category from '~/layouts/Category'
 import About from '~/layouts/About'
+import Certificate from '~/layouts/Certificate'
 
 const routes = [
   {
@@ -26,7 +27,12 @@ const routes = [
       {
         path: '/category/projects',
         element: <Projects />
-      },
+      }
+    ]
+  },
+  {
+    element: <Certificate />,
+    children: [
       {
         path: '/category/certificates',
         element: <Certificates />
