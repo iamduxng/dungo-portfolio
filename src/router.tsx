@@ -3,12 +3,10 @@ import Home from '~/pages/Home'
 import Error from '~/pages/Error'
 import Skills from '~/pages/Skills'
 import Projects from '~/pages/Projects'
-import Certificates from '~/pages/Certificates'
 import Travel from '~/pages/Travel'
 
 import Category from '~/layouts/Category'
 import About from '~/layouts/About'
-import Certificate from '~/layouts/Certificate'
 
 const routes = [
   {
@@ -27,15 +25,6 @@ const routes = [
       {
         path: '/category/projects',
         element: <Projects />
-      }
-    ]
-  },
-  {
-    element: <Certificate />,
-    children: [
-      {
-        path: '/category/certificates',
-        element: <Certificates />
       }
     ]
   },

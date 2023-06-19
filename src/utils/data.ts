@@ -30,7 +30,6 @@ export const CATEGORIES = [
   },
   {
     name: 'Certificates',
-    link: '/category/certificates',
     description:
       'Human beings need certificates of education, but knowledge needs no certification.',
     icon: 'elementals/air.png',

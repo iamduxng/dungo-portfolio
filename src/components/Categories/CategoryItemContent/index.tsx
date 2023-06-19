@@ -3,10 +3,11 @@ import FlipCardContent from '~/components/Common/FlipCardContent'
 import Button from '~/components/Common/Button'
 
 import styles from './CategoryItemContent.module.css'
+import Certificate from '~/components/Certificate'
 
 export interface CATEGORY_ITEM {
   name: string
-  link: string
+  link?: string
   description: string
   icon: string
   memoji: string
@@ -40,13 +41,17 @@ function CategoryItemContent({ category, isOpened }: Props) {
           <div className={styles.categoryDesc}>
             &quot;{category.description}&quot;
           </div>
-          <Button
-            as="link"
-            to={`${category.link}`}
-            className={styles.categoryBtn}
-          >
-            Show more
-          </Button>
+          {category.link ? (
+            <Button
+              as="link"
+              to={`${category.link}`}
+              className={styles.categoryBtn}
+            >
+              Show more
+            </Button>
+          ) : (
+            <Certificate />
+          )}
         </>
       }
     />

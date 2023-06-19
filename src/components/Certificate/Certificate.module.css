@@ -1,9 +1,9 @@
-.certificateList {
-  @apply w-full h-full;
+.certificate {
+  @apply flex space-x-8;
 }
 
 .badges {
-  @apply rounded-[6rem] border-4 border-black outline-8 outline outline-gray-700;
+  @apply rounded-[6rem] border-4 border-black outline-8 outline outline-gray-800;
   @apply overflow-hidden w-10/12 mx-auto bg-cover bg-no-repeat bg-center;
   background-image: url('/sky.png');
 }
@@ -32,4 +32,8 @@
 
 .arrow {
   @apply p-4 rounded-full bg-black bg-opacity-50 z-10 absolute top-1/2 -translate-y-1/2;
+}
+
+.certificateBtn {
+  @apply rounded-lg bg-yellow-300 text-white text-sm font-medium p-3 shadow-md;
 }
