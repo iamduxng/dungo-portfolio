@@ -42,7 +42,9 @@ function Certificate() {
     slidesToScroll: 1,
     arrow: false,
     nextArrow: <CertificateaArrow variant="next" />,
-    prevArrow: <CertificateaArrow variant="prev" />
+    prevArrow: <CertificateaArrow variant="prev" />,
+    beforeChange: (_currentSlideId: number, nextSlideId: number) =>
+      setSelectedCertificate(CERTIFICATES[nextSlideId].certificate)
   }
 
   const openDetails = () => setIsOpened(true)
@@ -50,7 +52,11 @@ function Certificate() {
 
   return (
     <>
-      <MyModal isOpen={isOpened} onRequestClose={closeDetails}>
+      <MyModal
+        isOpen={isOpened}
+        onRequestClose={closeDetails}
+        classes="max-w-screen-xl h-full"
+      >
         <div className={styles.certificate}>
           <div className={styles.badges}>
             <Carousel settings={certificateSettings}>
@@ -69,11 +75,11 @@ function Certificate() {
             </Carousel>
           </div>
 
-          <div>
+          <div className={styles.certificateDetail}>
             {selectedCertificate ? (
-              <img
-                src={selectedCertificate}
-                className="mx-auto h-full w-auto"
+              <div
+                style={{ backgroundImage: `url('${selectedCertificate}')` }}
+                className={styles.certificateImage}
               />
             ) : (
               <div className={styles.commingSoon}>
