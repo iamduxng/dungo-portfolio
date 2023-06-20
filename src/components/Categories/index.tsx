@@ -18,9 +18,11 @@ function Categories({ classes }: Props) {
   const responsive = useResponsive()
 
   const toggleDetails = (categoryLink: string) => {
-    startTransition(() => {
-      setRedirectedPage(categoryLink)
-    })
+    if (categoryLink) {
+      startTransition(() => {
+        setRedirectedPage(categoryLink)
+      })
+    }
   }
 
   const resetDetails = () => setRedirectedPage('')
@@ -34,7 +36,7 @@ function Categories({ classes }: Props) {
               key={`category-item-${idx}`}
               category={category}
               isOpened={category.link === redirectedPage}
-              handleOpen={() => toggleDetails(category.link)}
+              handleOpen={() => toggleDetails(category.link ?? '')}
             />
           ))}
         </Animate>
@@ -57,7 +59,7 @@ function Categories({ classes }: Props) {
             key={`category-item-${idx}`}
             category={category}
             isOpened={category.link === redirectedPage}
-            handleOpen={() => toggleDetails(category.link)}
+            handleOpen={() => toggleDetails(category.link || '')}
           />
         ))}
       </Carousel>

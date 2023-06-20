@@ -13,7 +13,8 @@ export {
   FaPhp as IconPhp,
   FaLaravel as IconLaravel,
   FaWordpress as IconWordpress,
-  FaJenkins as IconJenkins
+  FaJenkins as IconJenkins,
+  FaSpaceShuttle as IconSpace
 } from 'react-icons/fa'
 
 export {
