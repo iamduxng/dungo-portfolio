@@ -12,6 +12,7 @@ export const WELCOME = {
 
 export const CATEGORIES = [
   {
+    id: 11,
     name: 'Skills',
     link: '/category/skills',
     description:
@@ -21,6 +22,7 @@ export const CATEGORIES = [
     bgColor: 'from-rose-200 to-rose-500'
   },
   {
+    id: 22,
     name: 'Projects',
     link: '/category/projects',
     description: 'Discover all the projects I have been working on.',
@@ -29,6 +31,7 @@ export const CATEGORIES = [
     bgColor: 'from-green-200 to-green-500'
   },
   {
+    id: 33,
     name: 'Certificates',
     description:
       'Human beings need certificates of education, but knowledge needs no certification.',

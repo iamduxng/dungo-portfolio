@@ -6,6 +6,7 @@ import styles from './CategoryItemContent.module.css'
 import Certificate from '~/components/Certificate'
 
 export interface CATEGORY_ITEM {
+  id: number
   name: string
   link?: string
   description: string
