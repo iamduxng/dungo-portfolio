@@ -13,17 +13,19 @@ type Props = {
 }
 
 function Categories({ classes }: Props) {
-  const [redirectedPage, setRedirectedPage] = useState(0)
+  const [redirectedPage, setRedirectedPage] = useState('')
   const [isPending, startTransition] = useTransition()
   const responsive = useResponsive()
 
-  const toggleDetails = (categoryId: number) => {
-    startTransition(() => {
-      setRedirectedPage(categoryId)
-    })
+  const toggleDetails = (categoryLink: string) => {
+    if (categoryLink) {
+      startTransition(() => {
+        setRedirectedPage(categoryLink)
+      })
+    }
   }
 
-  const resetDetails = () => setRedirectedPage(0)
+  const resetDetails = () => setRedirectedPage('')
 
   if (responsive.md) {
     return (
@@ -33,8 +35,8 @@ function Categories({ classes }: Props) {
             <DesktopCategoryItem
               key={`category-item-${idx}`}
               category={category}
-              isOpened={category.id === redirectedPage}
-              handleOpen={() => toggleDetails(category.id)}
+              isOpened={category.link === redirectedPage}
+              handleOpen={() => toggleDetails(category.link ?? '')}
             />
           ))}
         </Animate>
@@ -47,7 +49,7 @@ function Categories({ classes }: Props) {
     slidesToScroll: 1,
     arrow: false,
     centerMode: true,
-    afterChange: (newIndex: number) => toggleDetails(CATEGORIES[newIndex].id)
+    onSwipe: () => resetDetails()
   }
   return (
     <div className={`${styles.categoriesContainer} ${classes}`}>
@@ -56,8 +58,8 @@ function Categories({ classes }: Props) {
           <MobileCategoryItem
             key={`category-item-${idx}`}
             category={category}
-            isOpened={category.id === redirectedPage}
-            handleOpen={() => toggleDetails(category.id)}
+            isOpened={category.link === redirectedPage}
+            handleOpen={() => toggleDetails(category.link || '')}
           />
         ))}
       </Carousel>
